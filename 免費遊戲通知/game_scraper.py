@@ -1,5 +1,6 @@
 import cloudscraper
 import datetime
+import requests
 import json
 import time
 import os
@@ -7,30 +8,36 @@ import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-CACHE_PATH = r"C:\Users\hsinc\Desktop\網站\免費遊戲通知\free_games_cache.json"
+CACHE_PATHS ={
+    'steam_discount':r"C:\Users\hsinc\Desktop\網站\免費遊戲通知\steam_discount.json",
+    'steam_free': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\steam_free.json',
+    'epic_free': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\epic_free.json',
+    'gog_discount': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\gog_discount.json',
+} 
 CACHE_EXPIRE_SECONDS = 60 * 60
 
-def load_cache():
-    if not os.path.exists(CACHE_PATH):
+def load_cache(key):
+    cache_path = CACHE_PATHS[key]
+    if not os.path.exists(cache_path):
         return None
     try:
-        mtime = os.path.getmtime(CACHE_PATH)
+        mtime = os.path.getmtime(cache_path)
         if time.time() - mtime > CACHE_EXPIRE_SECONDS:
             return None
-        with open(CACHE_PATH, 'r', encoding='utf-8') as f:
+        with open(cache_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"讀取快取失敗: {e}")
+        print(f"讀取 {key} 快取失敗: {e}")
         return None
     
 
-def save_cache(data):
+def save_cache(key, data):
     try:
-        os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
-        with open(CACHE_PATH, 'w', encoding='utf-8') as f:
+        os.makedirs(os.path.dirname(CACHE_PATHS[key]), exist_ok=True)
+        with open(CACHE_PATHS[key], 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print(f"寫入快取失敗: {e}")
+        print(f"寫入 {key} 快取失敗: {e}")
 
 
 #steam特惠
@@ -358,45 +365,39 @@ def get_gog_discount_games():
 
 
 #全
-def fetch_all_games():
-    all_games = []
-    steam_discount = get_steam_free_games()
-    steam_free = get_steam_free_permanent_games()
-    epic_free = get_epic_free_games()
-    gog_discount = get_gog_discount_games()
 
-    all_games.extend(steam_discount)
-    all_games.extend(steam_free)
-    all_games.extend(epic_free)
-    all_games.extend(gog_discount)
-
-    if gog_discount is None or len(gog_discount) == 0:
-        print("[錯誤] GOG 資料為空，資料不寫入快取")
-        return None
-    
-    return all_games
+def get_cached_or_fetch(platform_key, fetch_function):
+    cached_data = load_cache(platform_key)
+    if cached_data:
+        print(f"[快取] 使用 {platform_key} 快取資料")
+        return cached_data
+    else:
+        print(f"[爬蟲] {platform_key} 快取不存在或過期，重新抓取資料")
+        data = fetch_function()
+        if data:
+            save_cache(platform_key, data)
+            return data
+        else:
+            return []
 
 
 #全部平台整合
 def get_free_games(platform='', discount_range='', search_keyword=''):
     
 
-    cached_data = load_cache()
-    if cached_data:
-        print("[快取] 使用快取資料")
-        all_games = cached_data
-    else:
-        print("[爬蟲] 快取不存在或過期，重新抓取資料")
-        all_games = fetch_all_games()
-        save_cache(all_games)
+    steam_discount = get_cached_or_fetch('steam_discount', get_steam_free_games)
+    steam_free = get_cached_or_fetch('steam_free', get_steam_free_permanent_games)
+    epic_free = get_cached_or_fetch('epic_free', get_epic_free_games)
+    gog_discount = get_cached_or_fetch('gog_discount', get_gog_discount_games)
 
-        if all_games is None or len(all_games) == 0:
-            print("[警告] 爬蟲失敗，使用者請稍後再試")
-            return []
-    
-        save_cache(all_games)
+    all_games = []
+    all_games.extend(steam_discount)
+    all_games.extend(steam_free)
+    all_games.extend(epic_free)
+    all_games.extend(gog_discount)
 
     filtered_games = all_games
+
 
     if platform:
         filtered_games = [g for g in filtered_games if g['platform'] == platform]
