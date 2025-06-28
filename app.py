@@ -49,7 +49,7 @@ def auto_update_cache():
     print("[自動更新] 所有平台更新完成")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
         scheduler = BackgroundScheduler(timezone=timezone('Asia/Taipei'))
         scheduler.add_job(auto_update_cache,'cron',hour=2,minute=0)
@@ -58,5 +58,4 @@ if __name__ == '__main__':
         print("[排程] 已啟動自動更新任務，每天 2:00 會執行")
 
     port = int(os.environ.get('PORT', 10000))
-    app.run(debug=True)
-    
+    app.run(debug=True, port=port, use_reloader=False)

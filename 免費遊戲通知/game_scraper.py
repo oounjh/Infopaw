@@ -1,6 +1,5 @@
 import cloudscraper
 import datetime
-import requests
 import json
 import time
 import os
@@ -8,12 +7,15 @@ import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-CACHE_PATHS ={
-    'steam_discount':r"C:\Users\hsinc\Desktop\網站\免費遊戲通知\steam_discount.json",
-    'steam_free': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\steam_free.json',
-    'epic_free': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\epic_free.json',
-    'gog_discount': r'C:\Users\hsinc\Desktop\網站\免費遊戲通知\gog_discount.json',
-} 
+BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__),'cache')
+os.makedirs(BASE_CACHE_DIR,exist_ok=True)
+
+CACHE_PATHS = {
+    'steam_discount': os.path.join(BASE_CACHE_DIR, 'steam_discount.json'),
+    'steam_free': os.path.join(BASE_CACHE_DIR, 'steam_free.json'),
+    'epic_free': os.path.join(BASE_CACHE_DIR, 'epic_free.json'),
+    'gog_discount': os.path.join(BASE_CACHE_DIR, 'gog_discount.json'),
+}
 CACHE_EXPIRE_SECONDS = 60 * 60
 
 def load_cache(key):
@@ -421,4 +423,3 @@ def get_free_games(platform='', discount_range='', search_keyword=''):
         filtered_games = [g for g in filtered_games if keyword in g['title'].lower()]
 
     return filtered_games
-
