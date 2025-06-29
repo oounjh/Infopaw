@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, request
 from apscheduler.schedulers.background import BackgroundScheduler
 from pytz import timezone
 from game import game_bp
@@ -47,6 +47,28 @@ def auto_update_cache():
         print(f"[自動更新] GOG 特價更新 {len(gog_discount)} 筆資料")
 
     print("[自動更新] 所有平台更新完成")
+
+@app.route('/api/upload_cache',methods=['POST'])
+def uplods_cache():
+    data = request.get_json()
+    platform = data.get('platform')
+    games = data.get('data')
+
+    if platform and games:
+        save_cache(platform, games)
+        return jsonify({'message': f'Cache for {platform} updated successfully.'})
+    else:
+        return jsonify({'message': 'Invalid data.'}), 400
+    
+"""
+@app.route('/update_cache')
+def update_cache():
+    try:
+        auto_update_cache()
+        return jsonify({'message': 'Cache updated successfully'})
+    except Ellipsis as e:
+        return jsonify({'message': f'Cache update failed: {e}'}), 500
+"""
 
 
 if __name__ == "__main__":
