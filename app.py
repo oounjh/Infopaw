@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 import os
-from update_and_upload import upload_cache
+from update_and_upload import update_all_and_upload
 from game import game_bp
 from 動物圖片 import gallery_bp
 
