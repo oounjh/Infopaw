@@ -9,6 +9,9 @@ from cache import cache, save_cache_to_file
 
 app = Flask(__name__)
 
+app.register_blueprint(game_bp)
+app.register_blueprint(gallery_bp)
+
 CACHE_FILE_PATH = 'cache.json'
 GITHUB_CACHE_URL = 'https://raw.githubusercontent.com/oounjh/Infopaw/main/cache.json'
 
