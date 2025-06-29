@@ -14,7 +14,9 @@ def free_games_page():
 
     all_games = []
     for key in ['steam_discount', 'steam_free', 'epic_free', 'gog_discount']:
-        all_games.extend(cache.get(key, []))
+        platfrom_cache = cache.get(key, {})
+        games_data = platfrom_cache.get("data", [])
+        all_games.extend(games_data)
     
     filtered_games = all_games
 

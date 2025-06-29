@@ -1,21 +1,39 @@
 from flask import Flask, render_template, jsonify, request
+from flask import abort
 import os
+import json
+import requests
 from game import game_bp
 from 動物圖片 import gallery_bp
-from cache import cache
+from cache import cache, save_cache_to_file
 
 app = Flask(__name__)
 
-app.register_blueprint(game_bp)
-app.register_blueprint(gallery_bp)
+CACHE_FILE_PATH = 'cache.json'
+GITHUB_CACHE_URL = 'https://raw.githubusercontent.com/oounjh/Infopaw/main/cache.json'
 
-LEAPCELL_API_URL = os.getenv('LEAPCELL_API_URL')
-LEAPCELL_API_KEY = os.getenv('LEAPCELL_API_KEY')
+# 啟動時載入本地快取
+if os.path.exists(CACHE_FILE_PATH):
+    with open(CACHE_FILE_PATH, 'r', encoding='utf-8') as f:
+        app.cache = json.load(f)
+else:
+    app.cache = {}
 
-HEADERS = {
-    'Authorization': f'Bearer {LEAPCELL_API_KEY}'
-}
-app.cache = cache
+# Render 啟動時抓最新 GitHub 快取
+try:
+    print('[INFO] 正在同步 GitHub 快取...')
+    response = requests.get(GITHUB_CACHE_URL, timeout=10)
+    if response.status_code == 200:
+        app.cache = response.json()
+        save_cache_to_file(app.cache)
+        print('[INFO] GitHub 快取同步成功')
+    else:
+        print(f'[WARN] GitHub 快取同步失敗，HTTP 狀態碼：{response.status_code}')
+except Exception as e:
+    print(f'[ERROR] GitHub 快取同步時發生錯誤：{e}')
+
+
+API_KEY = os.getenv('API_KEY') or 'poko08564777'
 
 @app.route('/')
 def main_page():
@@ -34,13 +52,18 @@ def get_cache():
 @app.route('/upload_cache', methods=['POST'])
 def upload_cache():
     key = request.args.get('key')
+    api_key = request.headers.get('X-API-KEY')
     data = request.get_json()
+
+    if api_key != API_KEY:
+        abort(403, description='API Key 不正確')
 
     if not key or not data:
         return jsonify({'error': '缺少key或資料'}),400
     
     try:
         app.cache[key] = data
+        save_cache_to_file(app.cache)
         return jsonify({'message': f'{key}快取更新成功'})
     except Exception as e:
         return jsonify({'error': f'快取更新失敗: {e}'}),500

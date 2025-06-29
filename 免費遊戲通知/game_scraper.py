@@ -297,16 +297,17 @@ def get_gog_discount_games():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
         try:
+            page = browser.new_page()
             page.goto(url, timeout=12000, wait_until='load')
             page.wait_for_selector('.product-tile img', timeout=15000)
             page.wait_for_timeout(4000)
             content = page.content()
         except Exception as e:
             print(f"[ERROR] 請求 GOG 網頁失敗: {e}")
-            browser.close()
             return []
+        finally:
+            browser.close()
 
         soup = BeautifulSoup(content, 'html.parser')
 
