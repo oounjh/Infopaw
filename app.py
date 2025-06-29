@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 import os
-import requests
+from update_and_upload import upload_cache
 from game import game_bp
 from 動物圖片 import gallery_bp
 
@@ -15,7 +15,7 @@ LEAPCELL_API_KEY = os.getenv('LEAPCELL_API_KEY')
 HEADERS = {
     'Authorization': f'Bearer {LEAPCELL_API_KEY}'
 }
-cache = {}
+app.cache = {}
 
 @app.route('/')
 def main_page():
@@ -26,14 +26,10 @@ def get_cache():
     platform = request.args.get('platform')
     if not platform:
         return jsonify({'error': '缺少 platform 參數'}), 400
-    try:
-        url = f"{LEAPCELL_API_URL}/api/get_cache?platform={platform}"
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
-        return jsonify(resp.json())
-    except Exception as e:
-        print(f"取得快取失敗: {e}")
-        return jsonify({'error': '取得快取資料失敗'}), 500
+    if platform not in app.cache:
+        return jsonify({'error': f'{platform} 的快取不存在'}), 404
+    
+    return jsonify(app.cache[platform])
     
 @app.route('/upload_cache', methods=['POST'])
 def upload_cache():
@@ -44,7 +40,7 @@ def upload_cache():
         return jsonify({'error': '缺少key或資料'}),400
     
     try:
-        cache[key] = data
+        app.cache[key] = data
         return jsonify({'message': f'{key}快取更新成功'})
     except Exception as e:
         return jsonify({'error': f'快取更新失敗: {e}'}),500

@@ -1,8 +1,6 @@
 import cloudscraper
 import datetime
-import json
 import time
-import os
 import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
@@ -53,13 +51,6 @@ CACHE_PATHS = {
 }
 """
 
-def load_cache(key):
-    # 刪除或註解，改用 API 讀取
-    pass
-
-def save_cache(key, data):
-    # 不寫本地檔案，留空或刪除
-    pass
 
 
 
@@ -395,44 +386,3 @@ def get_cached_or_fetch(platform_key, fetch_function):
     data = fetch_function()
     return data if data else []
 
-
-#全部平台整合
-def get_free_games(platform='', discount_range='', search_keyword=''):
-    
-
-    steam_discount = get_cached_or_fetch('steam_discount', get_steam_free_games)
-    steam_free = get_cached_or_fetch('steam_free', get_steam_free_permanent_games)
-    epic_free = get_cached_or_fetch('epic_free', get_epic_free_games)
-    gog_discount = get_cached_or_fetch('gog_discount', get_gog_discount_games)
-
-    all_games = []
-    all_games.extend(steam_discount)
-    all_games.extend(steam_free)
-    all_games.extend(epic_free)
-    all_games.extend(gog_discount)
-
-    filtered_games = all_games
-
-
-    if platform:
-        filtered_games = [g for g in filtered_games if g['platform'] == platform]
-
-    if discount_range and (platform == '' or platform == 'steam' or platform == 'gog'):
-        if discount_range == '100':
-            filtered_games = [g for g in filtered_games if g['discount_pct_value'] == 100]
-        elif discount_range == '80-99':
-            filtered_games = [g for g in filtered_games if 80 <= g['discount_pct_value'] <= 99]
-        elif discount_range == '60-79':
-            filtered_games = [g for g in filtered_games if 60 <= g['discount_pct_value'] <= 79]
-        elif discount_range == '40-59':
-            filtered_games = [g for g in filtered_games if 40 <= g['discount_pct_value'] <= 59]
-        elif discount_range == '20-39':
-            filtered_games = [g for g in filtered_games if 20 <= g['discount_pct_value'] <= 39]
-        elif discount_range == '1-19':
-            filtered_games = [g for g in filtered_games if 1 <= g['discount_pct_value'] <= 19]
-
-    if search_keyword:
-        keyword = search_keyword.lower()
-        filtered_games = [g for g in filtered_games if keyword in g['title'].lower()]
-
-    return filtered_games
