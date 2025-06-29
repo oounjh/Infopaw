@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, current_app
+from cache import cache
 
 game_bp = Blueprint('game',__name__, url_prefix='/freegames')
 
@@ -13,7 +14,7 @@ def free_games_page():
 
     all_games = []
     for key in ['steam_discount', 'steam_free', 'epic_free', 'gog_discount']:
-        all_games.extend(current_app.cache.get(key, []))
+        all_games.extend(cache.get(key, []))
     
     filtered_games = all_games
 

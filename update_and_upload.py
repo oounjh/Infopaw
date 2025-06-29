@@ -1,5 +1,6 @@
 import os
 import requests
+from cache import cache
 from 免費遊戲通知.game_scraper import (
     get_steam_free_games, get_steam_free_permanent_games,
     get_epic_free_games, get_gog_discount_games,
@@ -31,9 +32,7 @@ def update_all_and_upload(local=False):
         data = func()
 
         if local:
-            # 如果是本機啟動，直接寫入 app.cache
-            from app import app
-            app.cache[key] = data
+            cache[key] = data
             print(f'[LOCAL] {key} 已載入快取')
         else:
             # GitHub Actions 模式，上傳到伺服器

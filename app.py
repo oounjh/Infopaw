@@ -3,6 +3,7 @@ import os
 from update_and_upload import update_all_and_upload
 from game import game_bp
 from 動物圖片 import gallery_bp
+from cache import cache
 
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ LEAPCELL_API_KEY = os.getenv('LEAPCELL_API_KEY')
 HEADERS = {
     'Authorization': f'Bearer {LEAPCELL_API_KEY}'
 }
-app.cache = {}
+app.cache = cache
 
 @app.route('/')
 def main_page():
