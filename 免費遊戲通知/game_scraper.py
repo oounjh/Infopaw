@@ -41,7 +41,7 @@ def save_cache(key, data):
     except Exception as e:
         print(f"寫入 {key} 快取失敗: {e}")
 """
-
+"""
 BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__), 'cache')
 os.makedirs(BASE_CACHE_DIR, exist_ok=True)
 
@@ -51,6 +51,7 @@ CACHE_PATHS = {
     'epic_free': os.path.join(BASE_CACHE_DIR, 'epic_free.json'),
     'gog_discount': os.path.join(BASE_CACHE_DIR, 'gog_discount.json'),
 }
+"""
 
 def load_cache(key):
     # 刪除或註解，改用 API 讀取
@@ -390,18 +391,9 @@ def get_gog_discount_games():
 #全
 
 def get_cached_or_fetch(platform_key, fetch_function):
-    cached_data = load_cache(platform_key)
-    if cached_data:
-        print(f"[快取] 使用 {platform_key} 快取資料")
-        return cached_data
-    else:
-        print(f"[爬蟲] {platform_key} 快取不存在或過期，重新抓取資料")
-        data = fetch_function()
-        if data:
-            save_cache(platform_key, data)
-            return data
-        else:
-            return []
+    print(f"[爬蟲] {platform_key} 重新抓取資料（API 快取邏輯外部處理）")
+    data = fetch_function()
+    return data if data else []
 
 
 #全部平台整合
