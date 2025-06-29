@@ -15,6 +15,7 @@ LEAPCELL_API_KEY = os.getenv('LEAPCELL_API_KEY')
 HEADERS = {
     'Authorization': f'Bearer {LEAPCELL_API_KEY}'
 }
+cache = {}
 
 @app.route('/')
 def main_page():
@@ -33,6 +34,20 @@ def get_cache():
     except Exception as e:
         print(f"取得快取失敗: {e}")
         return jsonify({'error': '取得快取資料失敗'}), 500
+    
+@app.route('/upload_cache', methods=['POST'])
+def upload_cache():
+    key = request.args.get('key')
+    data = request.get_json()
+
+    if not key or not data:
+        return jsonify({'error': '缺少key或資料'}),400
+    
+    try:
+        cache[key] = data
+        return jsonify({'message': f'{key}快取更新成功'})
+    except Exception as e:
+        return jsonify({'error': f'快取更新失敗: {e}'}),500
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))

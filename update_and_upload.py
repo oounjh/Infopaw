@@ -14,12 +14,9 @@ HEADERS = {
 }
 
 def upload_cache(platform, data):
-    url = f"{LEAPCELL_API_URL}/api/upload_cache"
-    payload = {
-        'platform': platform,
-        'data': data
-    }
-    response = requests.post(url, json=payload, headers=HEADERS)
+    url = f"{LEAPCELL_API_URL}/upload_cache?key={platform}"
+    response = requests.post(url, json=data, headers=HEADERS)
+    
     if response.status_code == 200:
         print(f"[上傳成功] {platform} 快取已更新")
     else:
