@@ -9,8 +9,8 @@ jobs:
   scrape_and_upload:
     runs-on: ubuntu-latest
     env:
-      LEAPCELL_API_URL: ${{ secrets.LEAPCELL_API_URL }}
-      LEAPCELL_API_KEY: ${{ secrets.LEAPCELL_API_KEY }}
+      LEAPCELL_API_URL: ${{ secrets.LEAPCELL_API_URL }} or 'https://nfopaw-oounjh473-32d8kyfw.leapcell.dev'
+      LEAPCELL_API_KEY: ${{ secrets.LEAPCELL_API_KEY }} or 'poko08564777'
 
     steps:
       - name: Checkout repo
