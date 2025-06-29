@@ -6,7 +6,7 @@ import os
 import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-
+"""
 BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__),'cache')
 os.makedirs(BASE_CACHE_DIR,exist_ok=True)
 
@@ -40,6 +40,27 @@ def save_cache(key, data):
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print(f"寫入 {key} 快取失敗: {e}")
+"""
+
+BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__), 'cache')
+os.makedirs(BASE_CACHE_DIR, exist_ok=True)
+
+CACHE_PATHS = {
+    'steam_discount': os.path.join(BASE_CACHE_DIR, 'steam_discount.json'),
+    'steam_free': os.path.join(BASE_CACHE_DIR, 'steam_free.json'),
+    'epic_free': os.path.join(BASE_CACHE_DIR, 'epic_free.json'),
+    'gog_discount': os.path.join(BASE_CACHE_DIR, 'gog_discount.json'),
+}
+
+def load_cache(key):
+    # 刪除或註解，改用 API 讀取
+    pass
+
+def save_cache(key, data):
+    # 不寫本地檔案，留空或刪除
+    pass
+
+
 
 
 #steam特惠

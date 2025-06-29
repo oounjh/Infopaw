@@ -1,83 +1,39 @@
 from flask import Flask, render_template, jsonify, request
-from apscheduler.schedulers.background import BackgroundScheduler
-from pytz import timezone
+import os
+import requests
 from game import game_bp
 from 動物圖片 import gallery_bp
-from 免費遊戲通知.game_scraper import (
-    get_steam_free_games, get_steam_free_permanent_games, 
-    get_epic_free_games, get_gog_discount_games,
-    save_cache)
-import os
-
 
 app = Flask(__name__)
 
 app.register_blueprint(game_bp)
 app.register_blueprint(gallery_bp)
 
+LEAPCELL_API_URL = os.getenv('LEAPCELL_API_URL')
+LEAPCELL_API_KEY = os.getenv('LEAPCELL_API_KEY')
+
+HEADERS = {
+    'Authorization': f'Bearer {LEAPCELL_API_KEY}'
+}
 
 @app.route('/')
 def main_page():
     return render_template('main.html')
 
-
-def auto_update_cache():
-    print("[自動更新] 開始更新 Steam 特價...")
-    steam_discount = get_steam_free_games()
-    if steam_discount:
-        save_cache('steam_discount', steam_discount)
-        print(f"[自動更新] Steam 特價更新 {len(steam_discount)} 筆資料")
-
-    print("[自動更新] 開始更新 Steam 限免...")
-    steam_free = get_steam_free_permanent_games()
-    if steam_free:
-        save_cache('steam_free', steam_free)
-        print(f"[自動更新] Steam 限免更新 {len(steam_free)} 筆資料")
-
-    print("[自動更新] 開始更新 Epic 限免...")
-    epic_free = get_epic_free_games()
-    if epic_free:
-        save_cache('epic_free', epic_free)
-        print(f"[自動更新] Epic 限免更新 {len(epic_free)} 筆資料")
-
-    print("[自動更新] 開始更新 GOG 特價...")
-    gog_discount = get_gog_discount_games()
-    if gog_discount:
-        save_cache('gog_discount', gog_discount)
-        print(f"[自動更新] GOG 特價更新 {len(gog_discount)} 筆資料")
-
-    print("[自動更新] 所有平台更新完成")
-
-@app.route('/api/upload_cache',methods=['POST'])
-def uplods_cache():
-    data = request.get_json()
-    platform = data.get('platform')
-    games = data.get('data')
-
-    if platform and games:
-        save_cache(platform, games)
-        return jsonify({'message': f'Cache for {platform} updated successfully.'})
-    else:
-        return jsonify({'message': 'Invalid data.'}), 400
-    
-"""
-@app.route('/update_cache')
-def update_cache():
+@app.route('/api/get_cache')
+def get_cache():
+    platform = request.args.get('platform')
+    if not platform:
+        return jsonify({'error': '缺少 platform 參數'}), 400
     try:
-        auto_update_cache()
-        return jsonify({'message': 'Cache updated successfully'})
-    except Ellipsis as e:
-        return jsonify({'message': f'Cache update failed: {e}'}), 500
-"""
+        url = f"{LEAPCELL_API_URL}/api/get_cache?platform={platform}"
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        return jsonify(resp.json())
+    except Exception as e:
+        print(f"取得快取失敗: {e}")
+        return jsonify({'error': '取得快取資料失敗'}), 500
 
-
-if __name__ == "__main__":
-    if os.environ.get('WERKZEUG_RUN_MAIN') == 'true':
-        scheduler = BackgroundScheduler(timezone=timezone('Asia/Taipei'))
-        scheduler.add_job(auto_update_cache,'cron',hour=2,minute=0)
-        scheduler.start()
-
-        print("[排程] 已啟動自動更新任務，每天 2:00 會執行")
-
+if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
     app.run(debug=True, port=port, use_reloader=False)
