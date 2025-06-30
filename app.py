@@ -45,12 +45,14 @@ def main_page():
 @app.route('/api/get_cache')
 def get_cache():
     platform = request.args.get('platform')
+    print(f'[DEBUG] 請求平台: {platform}')
+    print(f'[DEBUG] 現有快取平台: {list(app.cache.keys())}')
     if not platform:
         return jsonify({'error': '缺少 platform 參數'}), 400
     if platform not in app.cache:
         return jsonify({'error': f'{platform} 的快取不存在'}), 404
     
-    return jsonify(app.cache[platform])
+    return jsonify(app.cache[platform].get('data',[]))
     
 @app.route('/upload_cache', methods=['POST'])
 def upload_cache():
