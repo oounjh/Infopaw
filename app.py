@@ -44,16 +44,27 @@ def main_page():
     return render_template('main.html')
 
 @app.route('/api/get_cache')
-def get_cache():
+def api_get_cache():
     platform = request.args.get('platform')
-    print(f'[DEBUG] 請求平台: {platform}')
-    print(f'[DEBUG] 現有快取平台: {list(app.cache.keys())}')
+    
     if not platform:
         return jsonify({'error': '缺少 platform 參數'}), 400
-    if platform not in app.cache:
-        return jsonify({'error': f'{platform} 的快取不存在'}), 404
-    
-    return jsonify(app.cache[platform].get('data',[]))
+    cache = app.cache
+    print(f'[DEBUG] 請求平台: {platform}')
+    print(f'[DEBUG] 現有快取平台: {list(app.cache.keys())}')
+
+    if platform == 'steam':
+        games = cache.get('steam_discount', []) + cache.get('steam_free', [])
+    elif platform == 'epic':
+        games = cache.get('epic_free', [])
+    elif platform == 'gog':
+        games = cache.get('gog_discount', [])
+    else:
+        return jsonify({'error': '無效的平台'}), 400
+
+    print(f'[DEBUG] 抓到遊戲數量：{len(games)}')
+    return jsonify(games)
+
     
 @app.route('/upload_cache', methods=['POST'])
 def upload_cache():
