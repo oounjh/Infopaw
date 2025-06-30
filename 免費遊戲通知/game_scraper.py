@@ -4,55 +4,6 @@ import time
 import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-"""
-BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__),'cache')
-os.makedirs(BASE_CACHE_DIR,exist_ok=True)
-
-CACHE_PATHS = {
-    'steam_discount': os.path.join(BASE_CACHE_DIR, 'steam_discount.json'),
-    'steam_free': os.path.join(BASE_CACHE_DIR, 'steam_free.json'),
-    'epic_free': os.path.join(BASE_CACHE_DIR, 'epic_free.json'),
-    'gog_discount': os.path.join(BASE_CACHE_DIR, 'gog_discount.json'),
-}
-CACHE_EXPIRE_SECONDS = 60 * 60
-
-def load_cache(key):
-    cache_path = CACHE_PATHS[key]
-    if not os.path.exists(cache_path):
-        return None
-    try:
-        mtime = os.path.getmtime(cache_path)
-        if time.time() - mtime > CACHE_EXPIRE_SECONDS:
-            return None
-        with open(cache_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"讀取 {key} 快取失敗: {e}")
-        return None
-    
-
-def save_cache(key, data):
-    try:
-        os.makedirs(os.path.dirname(CACHE_PATHS[key]), exist_ok=True)
-        with open(CACHE_PATHS[key], 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    except Exception as e:
-        print(f"寫入 {key} 快取失敗: {e}")
-"""
-"""
-BASE_CACHE_DIR = os.path.join(os.path.dirname(__file__), 'cache')
-os.makedirs(BASE_CACHE_DIR, exist_ok=True)
-
-CACHE_PATHS = {
-    'steam_discount': os.path.join(BASE_CACHE_DIR, 'steam_discount.json'),
-    'steam_free': os.path.join(BASE_CACHE_DIR, 'steam_free.json'),
-    'epic_free': os.path.join(BASE_CACHE_DIR, 'epic_free.json'),
-    'gog_discount': os.path.join(BASE_CACHE_DIR, 'gog_discount.json'),
-}
-"""
-
-
-
 
 
 #steam特惠
@@ -299,9 +250,9 @@ def get_gog_discount_games():
         browser = p.chromium.launch(headless=True)
         try:
             page = browser.new_page()
-            page.goto(url, timeout=12000, wait_until='load')
-            page.wait_for_selector('.product-tile img', timeout=15000)
-            page.wait_for_timeout(4000)
+            page.goto(url, timeout=25000, wait_until='load')
+            page.wait_for_selector('.product-tile img', timeout=25000)
+            page.wait_for_timeout(6000)
             content = page.content()
         except Exception as e:
             print(f"[ERROR] 請求 GOG 網頁失敗: {e}")
