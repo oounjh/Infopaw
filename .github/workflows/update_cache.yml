@@ -29,6 +29,15 @@ jobs:
     - name: Run Cache Update Script
       run: |
         python update_cache.py  # 這是你剛剛建立的
+
+    - name: Show cache.json content
+      run: cat cache.json
+
+    - name: Check git status and diff
+      run: |
+        git status
+        git diff
+
     
 
 
