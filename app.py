@@ -54,11 +54,13 @@ def api_get_cache():
     print(f'[DEBUG] 現有快取平台: {list(app.cache.keys())}')
 
     if platform == 'steam':
-        games = cache.get('steam_discount', []) + cache.get('steam_free', [])
+        steam_discount_games = cache.get('steam_discount', {}).get('data', [])
+        steam_free_games = cache.get('steam_free', {}).get('data', [])
+        games = steam_discount_games + steam_free_games
     elif platform == 'epic':
-        games = cache.get('epic_free', [])
+        games = cache.get('epic_free', {}).get('data', [])
     elif platform == 'gog':
-        games = cache.get('gog_discount', [])
+        games = cache.get('gog_discount', {}).get('data', [])
     else:
         return jsonify({'error': '無效的平台'}), 400
 
