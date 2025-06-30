@@ -38,18 +38,16 @@ jobs:
         git status
         git diff
 
-    
-
-
     # 這個可以保留：如果你想同步 GitHub 上的 cache.json
     - name: Commit and Push cache.json
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add cache.json
-        git commit -m "Update cache.json by scheduled job"
-        git push
-      continue-on-error: true  # 如果沒變動不會失敗
-
-    # 如果你只靠 Render 伺服器快取，可以刪掉這段
-    # 你上傳 Render 用的是 update_cache.py，這段 curl 可以不需要
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update cache.json by scheduled job"
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/oounjh/Infopaw.git
+        fi
+      continue-on-error: true
