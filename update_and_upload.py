@@ -1,6 +1,6 @@
 import os
 import requests
-from cache import cache
+from cache import cache, save_cache_to_file
 import datetime
 from 免費遊戲通知.game_scraper import (
     get_steam_free_games, get_steam_free_permanent_games,
@@ -40,6 +40,7 @@ def update_all_and_upload(local=False):
 
         if local:
             cache[key] = wrapped_data
+            save_cache_to_file(cache)
             print(f'[LOCAL] {key} 已載入快取')
         else:
             # GitHub Actions 模式，上傳到伺服器
