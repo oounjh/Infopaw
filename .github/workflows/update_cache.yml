@@ -21,12 +21,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # 你的爬蟲依賴
+        pip install -r requirements.txt
 
     - name: Run Cache Update Script
       run: |
-        python your_scraper_script.py    # 執行你的爬蟲腳本，輸出 cache.json
+        python update_cache.py  # 這是你剛剛建立的
 
+    # 這個可以保留：如果你想同步 GitHub 上的 cache.json
     - name: Commit and Push cache.json
       run: |
         git config --local user.email "action@github.com"
@@ -36,11 +37,5 @@ jobs:
         git push
       continue-on-error: true  # 如果沒變動不會失敗
 
-    - name: Call Render Cache Upload API
-      env:
-        RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
-      run: |
-        curl -X POST "https://infopaw.onrender.com//upload_cache?key=your_cache_key" \
-          -H "Content-Type: application/json" \
-          -H "Authorization: Bearer $RENDER_API_KEY" \
-          --data @cache.json
+    # 如果你只靠 Render 伺服器快取，可以刪掉這段
+    # 你上傳 Render 用的是 update_cache.py，這段 curl 可以不需要
