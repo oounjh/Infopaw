@@ -23,9 +23,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install Playwright Browsers
+      run: playwright install
+
     - name: Run Cache Update Script
       run: |
         python update_cache.py  # 這是你剛剛建立的
+    
+
 
     # 這個可以保留：如果你想同步 GitHub 上的 cache.json
     - name: Commit and Push cache.json
