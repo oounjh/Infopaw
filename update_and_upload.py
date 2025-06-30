@@ -7,7 +7,7 @@ from 免費遊戲通知.game_scraper import (
     get_epic_free_games, get_gog_discount_games,
 )
 
-UPLOAD_URL = os.getenv('UPLOAD_URL') or 'https://infopaw.leapcell.app/upload_cache'
+UPLOAD_URL = os.getenv('UPLOAD_URL') or 'https://infopaw.onrender.com/upload_cache'
 
 def upload_to_server(key, data):
     headers = {'X-API-KEY': 'poko08564777'}

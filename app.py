@@ -30,6 +30,7 @@ try:
         app.cache = response.json()
         save_cache_to_file(app.cache)
         print('[INFO] GitHub 快取同步成功')
+        print(f'[INFO] 快取中有多少平台資料：{len(app.cache)}')
     else:
         print(f'[WARN] GitHub 快取同步失敗，HTTP 狀態碼：{response.status_code}')
 except Exception as e:
