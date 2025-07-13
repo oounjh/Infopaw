@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>遊戲折扣通知</title>
+    <!--吉祥物圖-->>
     <style>
         img {
             max-width: 100%;
@@ -15,8 +16,14 @@
         }
     </style>
 </head>
-<body>
-    <h1>🎮 遊戲折扣通知</h1>
+    <!--背景-->
+<body style="min-height: 100vh;
+             background-image: url('/static/game.png');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             background-attachment: fixed;">
+    <h1 style="color: white;">🎮 遊戲折扣通知</h1>
 
 
     <!--吉祥物-->
@@ -190,7 +197,7 @@
 
 
     <form method="get">
-        <label for="platform">選擇平台: </label>
+        <label style="color: white;" for="platform">選擇平台: </label>
         <select name="platform" id="platform" onchange="handlePlatformChange(true)">
             <option value="" disabled selected>請選擇平台</option>
             <option value="steam">Steam</option>
@@ -198,7 +205,7 @@
             <option value="gog">GOG</option>
         </select>
 
-        <label for="discount_range">折扣區間: </label>
+        <label style="color: white;" for="discount_range">折扣區間: </label>
         <select name="discount_range" id="discount_range" onchange="this.form.submit()">
             <option value="">全部</option>
             <option value="100">🎁 100% 免費</option>
@@ -209,7 +216,7 @@
             <option value="1-19">💰 1%~19%</option>
         </select>
 
-        <label for="search">搜尋遊戲名稱: </label>
+        <label style="color: white;" for="search">搜尋遊戲名稱: </label>
         <input type="text" id="search" name="search">
         <button type="submit">搜尋</button>
     </form>
@@ -307,7 +314,7 @@
                     }
 
                     const listHTML = filteredGames.map(game => `
-                        <li style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; width: 400px;">
+                        <li style="border: 1px solid #ccc; color: white; background-color: rgba(255, 255, 255, 0.2); border-radius: 8px; padding: 16px; width: 400px;">
                             <h3>${game.title}</h3>
                             <img src="${game.image_big}" onerror="this.onerror=null; this.src='${game.image_small}';" alt="game image">
                             <p>平台: ${game.platform}</p>
@@ -316,7 +323,7 @@
                                 <p><strong>折扣:</strong> ${game.discount || '無折扣'}</p>
                                 <p><strong>現價:</strong> ${game.final_price || '免費'}</p>
                             </div>
-                            <a href="${game.link}" target="_blank">前往購買</a>
+                            <a href="${game.link}" target="_blank" style="color: #808080;">前往購買</a>
                         </li>
                     `).join('');
 
