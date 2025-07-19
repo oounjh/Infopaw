@@ -1,5 +1,4 @@
-from flask import Flask, render_template, jsonify, request
-from flask import abort
+from flask import Flask, render_template, jsonify, request, abort, Response
 import os
 import json
 import requests
@@ -86,6 +85,28 @@ def upload_cache():
         return jsonify({'message': f'{key}快取更新成功'})
     except Exception as e:
         return jsonify({'error': f'快取更新失敗: {e}'}),500
+
+
+@app.route('/robots.txt')
+def robots_txt():
+    content = """User-agent: *
+Allow: /
+Sitemap: https://infopaw.onrender.com/sitemap.xml
+"""
+    return Response(content, mimetype='text/plain')
+
+# 新增 sitemap.xml 路由
+@app.route('/sitemap.xml')
+def sitemap_xml():
+    content = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://infopaw.onrender.com/</loc></url>
+    <url><loc>https://infopaw.onrender.com/gallery</loc></url>
+    <url><loc>https://infopaw.onrender.com/freegames</loc></url>
+</urlset>
+"""
+    return Response(content, mimetype='application/xml')
+
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
