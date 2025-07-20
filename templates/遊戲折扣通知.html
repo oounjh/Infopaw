@@ -1,346 +1,344 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>遊戲折扣通知</title>
-    <meta name="keywords" content="限免遊戲, Steam 特價, Epic 免費, GOG 優惠, 遊戲追蹤">
-    <meta property="og:title" content="限免與特價遊戲更新 - InfoPaw">
-    <meta property="og:description" content="掌握各大平台遊戲限時優惠資訊，省錢不錯過！">
-    <meta property="og:url" content="https://infopaw.onrender.com/freegames">
+{% extends "base.html" %}
 
+{% block title %}遊戲折扣通知 - InfoPaw{% endblock %}
 
-    <!--吉祥物圖-->>
-    <style>
-        img {
-            max-width: 100%;
-            height: auto;
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
-            image-rendering: -moz-crisp-edges;
-            image-rendering: pixelated;
-            
-        }
-    </style>
-</head>
-    <!--背景-->
-<body style="min-height: 100vh;
-             background-image: url('/static/game.png');
-             background-size: cover;
-             background-repeat: no-repeat;
-             background-position: center;
-             background-attachment: fixed;">
-    <h1 style="color: white;">🎮 遊戲折扣通知</h1>
+{% block head_extra %}
+<meta name="keywords" content="限免遊戲, Steam 特價, Epic 免費, GOG 優惠, 遊戲追蹤">
+<meta property="og:title" content="限免與特價遊戲更新 - InfoPaw">
+<meta property="og:description" content="掌握各大平台遊戲限時優惠資訊，省錢不錯過！">
+<meta property="og:url" content="https://infopaw.onrender.com/freegames">
 
-
-    <!--吉祥物-->
-  <!--對話框樣式-->
 <style>
-    @keyframes sway {
-        0% { transform: rotate(0deg); }
-        50% { transform: rotate(10deg); }
-        100% { transform: rotate(0deg); }
-    }
+  img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+  }
 
-    #mascot1{
-        animation: sway 5s infinite;
-        transform-origin: bottom center;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 1000;
-        max-width: 120px; 
-        max-height: 120px; 
-        transition: all 1s ease;
-    }
+  /* 背景固定 */
+  body {
+    min-height: 100vh;
+    background-image: url('/static/game.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
 
-    
-    #mascot1-dialog{
-        display: none;
-        position: fixed;
-        bottom: 140px;
-        right: 10px;
-        width: 250px;
-        padding: 15px;
-        background-color: rgb(255, 255, 255, 0.95);
-        border: 2px solid #ccc;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1001;
-        font-size: 14px;
-        line-height: 1.5;
-    }
+  /* 吉祥物動畫與訊息框 */
+  @keyframes sway {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
 
-    .message1-box{
-        position: fixed;
-        bottom: 140px;
-        right: 10px;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 15px 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        font-weight: bold;
-        font-size: 16px;
-        color: #333;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 1s ease;
-        z-index: 999;
-        max-width: 250px;
-    }
+  #mascot1 {
+    animation: sway 5s infinite;
+    transform-origin: bottom center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    max-width: 120px; 
+    max-height: 120px; 
+    transition: all 1s ease;
+  }
 
-    .message1-box.show{
-        opacity: 1;
-        pointer-events: auto;
-    }
-    </style>
-  
+  .message1-box {
+    position: fixed;
+    bottom: 140px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    z-index: 999;
+    max-width: 250px;
+  }
 
-      
-    <!--吉祥物照片-->
-    <img src="{{ url_for('static', filename='mascot1.png')}}" alt="吉祥物" id="mascot1">
+  .message1-box.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
+  form {
+    margin-top: 20px;
+    color: white;
+  }
 
-    <!--對話框-->
-    <div id="mascot1-message" class="message1-box">
-  
-    </div>
+  form label, form select, form input, form button {
+    margin-right: 10px;
+    font-weight: bold;
+  }
 
-    <!--吉祥物對話框開關-->
-  <script>
-    document.addEventListener('DOMContentLoaded',function(){
-      const mascot = document.getElementById('mascot1');
-      const messagBox = document.getElementById('mascot1-message');
-      let hideTimeout;
+  form select, form input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+  }
 
-      const messages = ['這個網站會顯示遊戲的折扣與限免!',
-                       '點擊🔄按鈕可以刷新全部條件！',
-                       '完整資訊推薦去有興趣的平台查看!',
-                       '有興趣的遊戲可以點擊前往購買。',
-                       '目前Epic只支援限免資訊。'
+  form button {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+  }
 
-      ];
-      
+  #game-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding-left: 0;
+  }
 
-      const factData = document.getElementById('fact-data');
-    if(!sessionStorage.getItem('mascotWelcomeShown')){
-        const factData = document.getElementById('fact-data');
-        if(factData){
-          const factText = factData.dataset.fact;
-          showMessage(factText);
-      } else {
-        showMessage('歡迎來到遊戲折扣展示網站！點擊我可以看更多資訊喔！')
-      }
-      sessionStorage.setItem('mascotWelcomeShown','true');
-    }
+  #game-list li {
+    border: 1px solid #ccc;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    width: 400px;
+  }
 
-    mascot.addEventListener('click', function () {
-      let randomMessage;
+  #game-list li h3 {
+    margin-top: 0;
+  }
 
-      if(typeof facts !== 'undefined' && Array.isArray(facts) && facts.length > 0) {
-        const index = Math.floor(Math.random() * facts.length);
-        randomMessage = facts[index];
-      } else {
-        const index = Math.floor(Math.random() * messages.length);
-        randomMessage = messages[index];
-      }
-      showMessage(randomMessage);
-    });
+  #game-list li img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
 
-  
+  #game-list li a {
+    color: #808080;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-    function showMessage(text){
-      messagBox.textContent = text;
-      messagBox.classList.add('show');
-      
+  #top-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1001;
+  }
 
-      clearTimeout(hideTimeout);
-      hideTimeout = setTimeout(() => {
-        messagBox.classList.remove('show');
+  #top-buttons a, #top-buttons form button {
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+  }
 
-        setTimeout(() => {
-          if (!messagBox.classList.contains('show')){
-            messagBox.textContent = '';
-          }
-        }, 1000);
-      }, 4000);
-    }
+  #top-buttons form {
+    margin: 0;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<h1 style="color: white;">🎮 遊戲折扣通知</h1>
+
+<!-- 吉祥物 -->
+<img src="{{ url_for('static', filename='mascot1.png') }}" alt="吉祥物" id="mascot1">
+
+<!-- 吉祥物訊息框 -->
+<div id="mascot1-message" class="message1-box"></div>
+
+<!-- 平台及折扣選擇表單 -->
+<form method="get">
+  <label for="platform">選擇平台:</label>
+  <select name="platform" id="platform" onchange="handlePlatformChange(true)">
+    <option value="" disabled selected>請選擇平台</option>
+    <option value="steam">Steam</option>
+    <option value="epic">Epic Games</option>
+    <option value="gog">GOG</option>
+  </select>
+
+  <label for="discount_range">折扣區間:</label>
+  <select name="discount_range" id="discount_range" onchange="this.form.submit()">
+    <option value="">全部</option>
+    <option value="100">🎁 100% 免費</option>
+    <option value="80-99">💰 80%~99%</option>
+    <option value="60-79">💰 60%~79%</option>
+    <option value="40-59">💰 40%~59%</option>
+    <option value="20-39">💰 20%~39%</option>
+    <option value="1-19">💰 1%~19%</option>
+  </select>
+
+  <label for="search">搜尋遊戲名稱:</label>
+  <input type="text" id="search" name="search" />
+  <button type="submit">搜尋</button>
+</form>
+
+<!-- 遊戲列表 -->
+<div id="game-list"></div>
+
+<!-- 返回與刷新按鈕 -->
+<div id="top-buttons">
+  <a href="/">⬅ 返回主網站</a>
+  <form method="get" action="/freegames/" >
+    <button type="submit">🔄刷新頁面🔄</button>
+  </form>
+</div>
+
+<!-- 吉祥物互動腳本 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const mascot = document.getElementById('mascot1');
+  const messageBox = document.getElementById('mascot1-message');
+  let hideTimeout;
+
+  const messages = [
+    '這個網站會顯示遊戲的折扣與限免!',
+    '點擊🔄按鈕可以刷新全部條件！',
+    '完整資訊推薦去有興趣的平台查看!',
+    '有興趣的遊戲可以點擊前往購買。',
+    '目前Epic只支援限免資訊。'
+  ];
+
+  if (!sessionStorage.getItem('mascotWelcomeShown')) {
+    showMessage('歡迎來到遊戲折扣展示網站！點擊我可以看更多資訊喔！');
+    sessionStorage.setItem('mascotWelcomeShown', 'true');
+  }
+
+  mascot.addEventListener('click', function () {
+    const index = Math.floor(Math.random() * messages.length);
+    showMessage(messages[index]);
   });
 
-  </script>
+  function showMessage(text) {
+    messageBox.textContent = text;
+    messageBox.classList.add('show');
 
-    
-
-
-    <script>
-        function handlePlatformChange(submitfrom = true){
-            const platformSelect = document.getElementById('platform');
-            const discountSelect = document.getElementById("discount_range");
-            const discountLabel = document.querySelector('label[for="discount_range"]');
-
-            if (platformSelect.value === 'epic') {
-                discountSelect.value = '';
-                discountSelect.disabled = true;
-                discountSelect.removeAttribute('name');
-                discountSelect.style.display = 'none';
-                discountLabel.style.display = 'none';
-            } else {
-                discountSelect.disabled = false;
-                discountSelect.setAttribute('name','discount_range');
-                discountSelect.style.display = '';
-                discountLabel.style.display = '';
-            }
-            if (submitfrom){
-                platformSelect.form.submit();
-            }
+    clearTimeout(hideTimeout);
+    hideTimeout = setTimeout(() => {
+      messageBox.classList.remove('show');
+      setTimeout(() => {
+        if (!messageBox.classList.contains('show')) {
+          messageBox.textContent = '';
         }
+      }, 1000);
+    }, 4000);
+  }
+});
+</script>
 
-        window.addEventListener('DOMContentLoaded',() => {
-            handlePlatformChange(false);
-        });
+<!-- 平台選擇控制 -->
+<script>
+function handlePlatformChange(submitFrom = true) {
+  const platformSelect = document.getElementById('platform');
+  const discountSelect = document.getElementById("discount_range");
+  const discountLabel = document.querySelector('label[for="discount_range"]');
 
-    </script>
+  if (platformSelect.value === 'epic') {
+    discountSelect.value = '';
+    discountSelect.disabled = true;
+    discountSelect.removeAttribute('name');
+    discountSelect.style.display = 'none';
+    discountLabel.style.display = 'none';
+  } else {
+    discountSelect.disabled = false;
+    discountSelect.setAttribute('name', 'discount_range');
+    discountSelect.style.display = '';
+    discountLabel.style.display = '';
+  }
+  if (submitFrom) {
+    platformSelect.form.submit();
+  }
+}
 
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const platform = urlParams.get('platform');
+  const discountRange = urlParams.get('discount_range');
+  const search = urlParams.get('search');
 
-    <form method="get">
-        <label style="color: white;" for="platform">選擇平台: </label>
-        <select name="platform" id="platform" onchange="handlePlatformChange(true)">
-            <option value="" disabled selected>請選擇平台</option>
-            <option value="steam">Steam</option>
-            <option value="epic">Epic Games</option>
-            <option value="gog">GOG</option>
-        </select>
+  if (platform) {
+    document.getElementById('platform').value = platform;
+    if (discountRange) {
+      document.getElementById('discount_range').value = discountRange;
+    }
+    if (search) {
+      document.getElementById('search').value = search;
+    }
+  }
 
-        <label style="color: white;" for="discount_range">折扣區間: </label>
-        <select name="discount_range" id="discount_range" onchange="this.form.submit()">
-            <option value="">全部</option>
-            <option value="100">🎁 100% 免費</option>
-            <option value="80-99">💰 80%~99%</option>
-            <option value="60-79">💰 60%~79%</option>
-            <option value="40-59">💰 40%~59%</option>
-            <option value="20-39">💰 20%~39%</option>
-            <option value="1-19">💰 1%~19%</option>
-        </select>
+  handlePlatformChange(false);
 
-        <label style="color: white;" for="search">搜尋遊戲名稱: </label>
-        <input type="text" id="search" name="search">
-        <button type="submit">搜尋</button>
-    </form>
+  if (!platform) {
+    document.getElementById('game-list').innerHTML = '<p style="color:white;">請先選擇平台。</p>';
+    return;
+  }
 
+  fetch(`/api/get_cache?platform=${platform}`)
+    .then(res => res.json())
+    .then(data => {
+      if (!Array.isArray(data) || data.length === 0) {
+        document.getElementById('game-list').innerHTML = '<p style="color:white;">查無符合條件的遊戲。</p>';
+        return;
+      }
 
+      let filteredGames = data;
 
-    <!-- 遊戲列表 -->
-    <div id="game-list"></div>
-
-    <!-- 返回與刷新按鈕 -->
-    <div style="position: fixed; top: 10px; right: 10px; display: flex; gap: 10px; z-index: 1001;">
-        <a href="/" style="padding: 8px 16px; background-color: #f2f2f2; color: #333; text-decoration: none; border-radius: 8px; border: 1px solid #ccc; font-weight: bold;">
-            ⬅ 返回主網站
-        </a>
-        <form method="get" action="/freegames/" style="margin: 0;">
-            <button type="submit" style="padding: 8px 16px; background-color: #f2f2f2; color: #333; border: 1px solid #ccc; border-radius: 8px; font-weight: bold; cursor: pointer;">
-                🔄刷新頁面🔄
-            </button>
-        </form>
-    </div>
-
-    <!-- API 抓資料 -->
-    <script>
-        function handlePlatformChange(submitfrom = true) {
-            const platformSelect = document.getElementById('platform');
-            const discountSelect = document.getElementById("discount_range");
-            const discountLabel = document.querySelector('label[for="discount_range"]');
-
-            if (platformSelect.value === 'epic') {
-                discountSelect.value = '';
-                discountSelect.disabled = true;
-                discountSelect.removeAttribute('name');
-                discountSelect.style.display = 'none';
-                discountLabel.style.display = 'none';
-            } else {
-                discountSelect.disabled = false;
-                discountSelect.setAttribute('name', 'discount_range');
-                discountSelect.style.display = '';
-                discountLabel.style.display = '';
-            }
-            if (submitfrom) {
-                platformSelect.form.submit();
-            }
+      if (discountRange) {
+        if (discountRange === '100') {
+          filteredGames = filteredGames.filter(game => game.discount_pct_value === 100);
+        } else if (discountRange.includes('-')) {
+          const [min, max] = discountRange.split('-').map(Number);
+          filteredGames = filteredGames.filter(game => game.discount_pct_value >= min && game.discount_pct_value <= max);
         }
+      }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const platform = urlParams.get('platform');
-            const discountRange = urlParams.get('discount_range');
-            const search = urlParams.get('search');
+      if (search) {
+        filteredGames = filteredGames.filter(game => game.title.toLowerCase().includes(search.toLowerCase()));
+      }
 
-            if (platform) {
-                document.getElementById('platform').value = platform;
-                if (discountRange) {
-                    document.getElementById('discount_range').value = discountRange;
-                }
-                if (search) {
-                    document.getElementById('search').value = search;
-                }
-            }
+      if (filteredGames.length === 0) {
+        document.getElementById('game-list').innerHTML = '<p style="color:white;">查無符合條件的遊戲。</p>';
+        return;
+      }
 
-            handlePlatformChange(false);
+      const listHTML = filteredGames.map(game => `
+        <li>
+          <h3>${game.title}</h3>
+          <img src="${game.image_big}" onerror="this.onerror=null; this.src='${game.image_small}';" alt="game image">
+          <p>平台: ${game.platform}</p>
+          <div>
+            <p><strong>原價:</strong> ${game.original_price || '未知'}</p>
+            <p><strong>折扣:</strong> ${game.discount || '無折扣'}</p>
+            <p><strong>現價:</strong> ${game.final_price || '免費'}</p>
+          </div>
+          <a href="${game.link}" target="_blank" style="color: #808080;">前往購買</a>
+        </li>
+      `).join('');
 
-            if (!platform) {
-                document.getElementById('game-list').innerHTML = '<p>請先選擇平台。</p>';
-                return;
-            }
+      document.getElementById('game-list').innerHTML = `<ul>${listHTML}</ul>`;
+    })
+    .catch(err => {
+      console.error('API 錯誤:', err);
+      document.getElementById('game-list').innerHTML = '<p style="color:white;">資料載入失敗，請稍後再試。</p>';
+    });
+});
+</script>
 
-            fetch(`/api/get_cache?platform=${platform}`)
-                .then(res => res.json())
-                .then(data => {
-                    if (!Array.isArray(data) || data.length === 0) {
-                        document.getElementById('game-list').innerHTML = '<p>查無符合條件的遊戲。</p>';
-                        return;
-                    }
-
-                    let filteredGames = data;
-
-                    if (discountRange) {
-                        if (discountRange === '100') {
-                            filteredGames = filteredGames.filter(game => game.discount_pct_value === 100);
-                        } else if (discountRange.includes('-')) {
-                            const [min, max] = discountRange.split('-').map(Number);
-                            filteredGames = filteredGames.filter(game => game.discount_pct_value >= min && game.discount_pct_value <= max);
-                        }
-                    }
-
-                    if (search) {
-                        filteredGames = filteredGames.filter(game => game.title.toLowerCase().includes(search.toLowerCase()));
-                    }
-
-                    if (filteredGames.length === 0) {
-                        document.getElementById('game-list').innerHTML = '<p>查無符合條件的遊戲。</p>';
-                        return;
-                    }
-
-                    const listHTML = filteredGames.map(game => `
-                        <li style="border: 1px solid #ccc; color: white; background-color: rgba(255, 255, 255, 0.2); border-radius: 8px; padding: 16px; width: 400px;">
-                            <h3>${game.title}</h3>
-                            <img src="${game.image_big}" onerror="this.onerror=null; this.src='${game.image_small}';" alt="game image">
-                            <p>平台: ${game.platform}</p>
-                            <div>
-                                <p><strong>原價:</strong> ${game.original_price || '未知'}</p>
-                                <p><strong>折扣:</strong> ${game.discount || '無折扣'}</p>
-                                <p><strong>現價:</strong> ${game.final_price || '免費'}</p>
-                            </div>
-                            <a href="${game.link}" target="_blank" style="color: #808080;">前往購買</a>
-                        </li>
-                    `).join('');
-
-                    document.getElementById('game-list').innerHTML = `<ul style="display: flex; flex-wrap: wrap; gap: 24px; list-style: none;">${listHTML}</ul>`;
-                })
-                .catch(err => {
-                    console.error('API 錯誤:', err);
-                    document.getElementById('game-list').innerHTML = '<p>資料載入失敗，請稍後再試。</p>';
-                });
-        });
-    </script>
-
-</body>
-</html>
+{% endblock %}

@@ -1,40 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>lnfopaw</title>
-    <meta name="description" content="InfoPaw,探索限時免費遊戲、平台特價與來自 Pexels 的動物圖庫，一個放鬆又有趣的網站。">
-    <meta name="keywords" content="InfoPaw,免費遊戲, 限時特價, Steam, Epic, GOG, 動物圖片, Pexels, 冷知識">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Miaowan">
+{% extends "base.html" %}
 
-    <!-- Open Graph 社群分享用 -->
-    <meta property="og:title" content="InfoPaw - 免費遊戲與動物圖片平台">
-    <meta property="og:description" content="Steam、Epic、GOG 限免資訊 + 可愛動物圖鑑，隨機吉祥物冷知識陪你探索！">
-    <meta property="og:url" content="https://infopaw.onrender.com">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ url_for('static', filename='mascot2.png') }}">
+{% block title %}lnfopaw - 首頁{% endblock %}
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96x96.png') }}">
-    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon/favicon.svg') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
-    <link rel="manifest" href="{{ url_for('static', filename='favicon/site.webmanifest') }}">
-    <link rel="icon" sizes="192x192" href="{{ url_for('static', filename='favicon/web-app-manifest-192x192.png') }}">
-    <link rel="icon" sizes="512x512" href="{{ url_for('static', filename='favicon/web-app-manifest-512x512.png') }}">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C4C15L02M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2C4C15L02M');
-    </script>
-
-</head>
-<body>
+{% block content %}
     <img src="{{ url_for('static', filename='mascot2.png')}}" alt="吉祥物" id="mascot" 
          style="max-width: 120px; max-height: 120px; width: auto; height: auto;
          position: fixed; bottom: 10px; right: 10px; z-index: 1000;">
@@ -44,6 +12,5 @@
     <h2>遊戲的特價資訊皆以平台為準</h2>
     <li><a href="/gallery">👉 動物圖片瀏覽網站</a></li>
     <li><a href="/freegames">🎮 限免特價遊戲通知頁面</a></li>
+{% endblock %}
 
-</body>
-</html>
