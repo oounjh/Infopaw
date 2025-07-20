@@ -15,6 +15,14 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ url_for('static', filename='mascot2.png') }}">
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon/favicon.svg') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='favicon/site.webmanifest') }}">
+    <link rel="icon" sizes="192x192" href="{{ url_for('static', filename='favicon/web-app-manifest-192x192.png') }}">
+    <link rel="icon" sizes="512x512" href="{{ url_for('static', filename='favicon/web-app-manifest-512x512.png') }}">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C4C15L02M"></script>
@@ -22,9 +30,8 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-2C4C15L02M');
-</script>
+    </script>
 
 </head>
 <body>
