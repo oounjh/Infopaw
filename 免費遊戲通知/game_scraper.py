@@ -220,9 +220,9 @@ def get_epic_free_games():
         upcoming_offers = promotions.get('upcomingPromotionalOffers',[])
 
 
-        def is_actine(offers):
+        def is_active(offers):
             for promo in offers:
-                for offers in promo.get('promotionalOffers', []):
+                for offer in promo.get('promotionalOffers', []):
                     start = offer.get('startDate')
                     end = offer.get('endDate')
                     if start <= now <=end:
@@ -237,13 +237,13 @@ def get_epic_free_games():
                         return True
             return False
         
-        if is_actine(current_offers):
+        if is_active(current_offers):
             game = parse_epic_game(element, is_free=True)
             if game:
                 games.append(game)
 
         elif is_upcoming(upcoming_offers):
-            game - parse_epic_game(element, is_free=True)
+            game = parse_epic_game(element, is_free=True)
             if game:
                 game['type'] = 'upcoming'
                 games.append(game)
