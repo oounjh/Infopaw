@@ -142,7 +142,6 @@ def get_steam_free_permanent_games():
     return games
 
 
-
 #Epic網頁請求
 def get_epic_games_raw():
     url = "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-Hant&country=TW&allowCountries=TW"
@@ -212,8 +211,7 @@ def get_epic_free_games():
     
 
     games = []
-    now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
-
+    now = datetime.datetime.utcnow().isoformat()
 
 
     for element in data['data']['Catalog']['searchStore']['elements']:
@@ -222,36 +220,6 @@ def get_epic_free_games():
         upcoming_offers = promotions.get('upcomingPromotionalOffers',[])
 
 
-        # 先檢查當下優惠
-        for promo in current_offers:
-            for offer in promo.get('promotionalOffers', []):
-                start = offer.get('startDate')
-                end = offer.get('endDate')
-                if start <= now <= end:
-                    game = parse_epic_game(element, is_free=True)
-                    if game:
-                        game['type'] = 'free'
-                        game['startDate'] = start
-                        game['endDate'] = end
-                        games.append(game)
-
-        # 再檢查即將推出的優惠
-        for promo in upcoming_offers:
-            for offer in promo.get('promotionalOffers', []):
-                start = offer.get('startDate')
-                end = offer.get('endDate')
-                if now < start:
-                    game = parse_epic_game(element, is_free=True)
-                    if game:
-                        game['type'] = 'upcoming'
-                        game['startDate'] = start
-                        game['endDate'] = end
-                        games.append(game)
-
-    return games
-
-
-'''
         def is_active(offers):
             for promo in offers:
                 for offer in promo.get('promotionalOffers', []):
@@ -290,7 +258,7 @@ def get_epic_free_games():
                 games.append(game)
 
     return games
-'''
+
 
 
 
