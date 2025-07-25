@@ -1,6 +1,6 @@
 {
   "steam_discount": {
-    "last_updated": "2025-07-25T14:11:45.842487",
+    "last_updated": "2025-07-25T14:21:30.447522",
     "data": [
       {
         "title": "OCTOPATH TRAVELER + OCTOPATH TRAVELER II",
@@ -351,6 +351,18 @@
         "type": "discount"
       },
       {
+        "title": "Uninitialized",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/37095//capsule_sm_120.jpg?t=0",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/37095//capsule_616x353.jpg?t=0",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/bundle/37095//",
+        "discount": "",
+        "original_price": "",
+        "final_price": "",
+        "discount_pct_value": 0,
+        "type": "discount"
+      },
+      {
         "title": "Crysis Remastered Trilogy",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/28590/3stpsj7ikiks9xhz/capsule_sm_120.jpg?t=1668697090",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/28590/3stpsj7ikiks9xhz/capsule_616x353.jpg?t=1668697090",
@@ -588,18 +600,6 @@
         "original_price": "$81.45",
         "final_price": "$18.90",
         "discount_pct_value": 77,
-        "type": "discount"
-      },
-      {
-        "title": "Hell Clock + Soulstone Survivors",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/55242/e64v8j1f4yx80njx/0821b26c220b9d5ce1cab5b76419658d02336878/capsule_sm_120.jpg?t=1753209634",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/55242/e64v8j1f4yx80njx/0821b26c220b9d5ce1cab5b76419658d02336878/capsule_616x353.jpg?t=1753209634",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/bundle/55242/Hell_Clock__Soulstone_Survivors/",
-        "discount": "",
-        "original_price": "",
-        "final_price": "$31.48",
-        "discount_pct_value": 0,
         "type": "discount"
       },
       {
@@ -1179,30 +1179,6 @@
         "type": "discount"
       },
       {
-        "title": "Icarus: Great Hunts Launch Bundle",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/56336/z9qxf0u2ep1xdtl3/7fa3672e0dc67280fe6d3874291f7e96fb83b8f7/capsule_sm_120.jpg?t=1752794272",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/56336/z9qxf0u2ep1xdtl3/7fa3672e0dc67280fe6d3874291f7e96fb83b8f7/capsule_616x353.jpg?t=1752794272",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/bundle/56336/Icarus_Great_Hunts_Launch_Bundle/",
-        "discount": "-3%",
-        "original_price": "$50.22",
-        "final_price": "$48.55",
-        "discount_pct_value": 3,
-        "type": "discount"
-      },
-      {
-        "title": "Loop Hero x The King is Watching",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/55801/2ysjcg74pw217st2/1669f1bde63b737121b7f88253b4bc3558503e87/capsule_sm_120.jpg?t=1751036921",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/bundles/55801/2ysjcg74pw217st2/1669f1bde63b737121b7f88253b4bc3558503e87/capsule_616x353.jpg?t=1751036921",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/bundle/55801/Loop_Hero_x_The_King_is_Watching/",
-        "discount": "-43%",
-        "original_price": "$26.98",
-        "final_price": "$15.51",
-        "discount_pct_value": 43,
-        "type": "discount"
-      },
-      {
         "title": "GONE Fishing",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645890/54a0f62aad71eb440870f49e2b63fd635851a221/capsule_sm_120.jpg?t=1753204698",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3645890/54a0f62aad71eb440870f49e2b63fd635851a221/capsule_616x353.jpg?t=1753204698",
@@ -1505,7 +1481,7 @@
     ]
   },
   "steam_free": {
-    "last_updated": "2025-07-25T14:11:46.476485",
+    "last_updated": "2025-07-25T14:21:31.031090",
     "data": [
       {
         "title": "Like a Dragon: Pirate Yakuza in Hawaii - Kazuma Kiryu Special Outfit",
@@ -1522,11 +1498,68 @@
     ]
   },
   "epic_free": {
-    "last_updated": "2025-07-25T14:11:47.251982",
-    "data": []
+    "last_updated": "2025-07-25T14:21:31.649125",
+    "data": [
+      {
+        "title": "朝聖者 (Pilgrims)",
+        "image_small": "https://cdn1.epicgames.com/spt-assets/bfb773acd06f4d4090b82bd18f4b7744/pilgrims-7asyy.jpg",
+        "image_big": "https://cdn1.epicgames.com/spt-assets/bfb773acd06f4d4090b82bd18f4b7744/pilgrims-7asyy.jpg",
+        "platform": "epic",
+        "link": "https://store.epicgames.com/p/pilgrims-6d250f",
+        "discount": "-100%",
+        "original_price": "未知",
+        "final_price": "免費",
+        "discount_pct_value": 100,
+        "type": "upcoming",
+        "startDate": "2025-07-31T15:00:00.000Z",
+        "endDate": "2025-08-07T15:00:00.000Z"
+      },
+      {
+        "title": "失落城堡: 遺跡守護者",
+        "image_small": "https://cdn1.epicgames.com/spt-assets/a6d76157ad884f2c9aa470b30da9e2ff/lost-castle-1qvy6.jpg",
+        "image_big": "https://cdn1.epicgames.com/spt-assets/a6d76157ad884f2c9aa470b30da9e2ff/lost-castle-1qvy6.jpg",
+        "platform": "epic",
+        "link": "https://store.epicgames.com/p/lost-castle-abb2e2",
+        "discount": "-100%",
+        "original_price": "未知",
+        "final_price": "免費",
+        "discount_pct_value": 100,
+        "type": "free",
+        "startDate": "2025-07-17T15:00:00.000Z",
+        "endDate": "2025-07-31T15:00:00.000Z"
+      },
+      {
+        "title": "Legion TD 2",
+        "image_small": "https://cdn1.epicgames.com/spt-assets/29586d03c1c147569a1991a8616c1413/legion-td-2-d1xu1.png",
+        "image_big": "https://cdn1.epicgames.com/spt-assets/29586d03c1c147569a1991a8616c1413/legion-td-2-d1xu1.png",
+        "platform": "epic",
+        "link": "https://store.epicgames.com/p/legion-td-2-a244b9",
+        "discount": "-100%",
+        "original_price": "未知",
+        "final_price": "免費",
+        "discount_pct_value": 100,
+        "type": "free",
+        "startDate": "2025-07-24T15:00:00.000Z",
+        "endDate": "2025-07-31T15:00:00.000Z"
+      },
+      {
+        "title": "Keylocker | Turn Based Cyberpunk Action",
+        "image_small": "https://cdn1.epicgames.com/spt-assets/186103570e674b0f9b60a1003ec09d07/keylocker-1u0ws.png",
+        "image_big": "https://cdn1.epicgames.com/spt-assets/186103570e674b0f9b60a1003ec09d07/keylocker-1u0ws.png",
+        "platform": "epic",
+        "link": "https://store.epicgames.com/p/keylocker-622bcc",
+        "discount": "-100%",
+        "original_price": "未知",
+        "final_price": "免費",
+        "discount_pct_value": 100,
+        "type": "upcoming",
+        "startDate": "2025-07-31T15:00:00.000Z",
+        "endDate": "2025-08-07T15:00:00.000Z"
+      }
+    ]
   },
   "gog_discount": {
-    "last_updated": "2025-07-25T14:12:16.923777",
+    "last_updated": "2025-07-25T14:21:59.261520",
     "data": [
       {
         "title": "SPORE™ Collection",
