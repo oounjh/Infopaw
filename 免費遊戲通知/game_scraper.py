@@ -141,23 +141,6 @@ def get_steam_free_permanent_games():
 
     return games
 
-# Epic檢查實際商店頁是否還是「免費」
-def is_epic_page_actually_free(link):
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                          "AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/114.0.0.0 Safari/537.36",
-            "Accept-Language": "zh-TW,zh;q=0.9",
-        }
-        scraper = cloudscraper.create_scraper()
-        res = scraper.get(link, headers=headers)
-        res.raise_for_status()
-        return '免費' in res.text or 'Free Now' in res.text
-    except Exception as e:
-        print(f"檢查商店頁錯誤: {e}")
-        return False
-
 
 
 #Epic網頁請求
@@ -200,8 +183,6 @@ def parse_epic_game(element, is_free=False):
 
     link = f"https://store.epicgames.com/p/{product_slug}"
 
-    if is_free and not is_epic_page_actually_free(link):
-        return None
 
     original_price = '未知'
     final_price = '免費' if is_free else '未知'
