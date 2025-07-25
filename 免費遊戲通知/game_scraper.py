@@ -211,7 +211,8 @@ def get_epic_free_games():
     
 
     games = []
-    now = datetime.datetime.utcnow().isoformat()
+    now = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
+
 
 
     for element in data['data']['Catalog']['searchStore']['elements']:
