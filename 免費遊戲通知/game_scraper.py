@@ -238,14 +238,23 @@ def get_epic_free_games():
             return False
         
         if is_active(current_offers):
+            start_date = current_offers[0]['promotionalOffers'][0].get('startDate')
+            end_date = current_offers[0]['promotionalOffers'][0].get('endDate')
             game = parse_epic_game(element, is_free=True)
             if game:
+                game['type'] = 'free'
+                game['startDate'] = start_date
+                game['endDate'] = end_date
                 games.append(game)
 
         elif is_upcoming(upcoming_offers):
+            start_date = upcoming_offers[0]['promotionalOffers'][0].get('startDate')
+            end_date = upcoming_offers[0]['promotionalOffers'][0].get('endDate')
             game = parse_epic_game(element, is_free=True)
             if game:
                 game['type'] = 'upcoming'
+                game['startDate'] = start_date
+                game['endDate'] = end_date
                 games.append(game)
 
     return games
