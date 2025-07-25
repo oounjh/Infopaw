@@ -220,6 +220,36 @@ def get_epic_free_games():
         upcoming_offers = promotions.get('upcomingPromotionalOffers',[])
 
 
+        # 先檢查當下優惠
+        for promo in current_offers:
+            for offer in promo.get('promotionalOffers', []):
+                start = offer.get('startDate')
+                end = offer.get('endDate')
+                if start <= now <= end:
+                    game = parse_epic_game(element, is_free=True)
+                    if game:
+                        game['type'] = 'free'
+                        game['startDate'] = start
+                        game['endDate'] = end
+                        games.append(game)
+
+        # 再檢查即將推出的優惠
+        for promo in upcoming_offers:
+            for offer in promo.get('promotionalOffers', []):
+                start = offer.get('startDate')
+                end = offer.get('endDate')
+                if now < start:
+                    game = parse_epic_game(element, is_free=True)
+                    if game:
+                        game['type'] = 'upcoming'
+                        game['startDate'] = start
+                        game['endDate'] = end
+                        games.append(game)
+
+    return games
+
+
+'''
         def is_active(offers):
             for promo in offers:
                 for offer in promo.get('promotionalOffers', []):
@@ -258,31 +288,8 @@ def get_epic_free_games():
                 games.append(game)
 
     return games
-            
 '''
-        if not promotions:
-            continue
 
-        
-        for promo in promotions.get('promotionalOffers', []):
-            for offer in promo.get('promotionalOffers', []):
-                try:
-                    start = offer.get('startDate')
-                    end = offer.get('endDate')
-                    if start <= now <= end:
-                        game = parse_epic_game(element, is_free=True)
-                        if game:
-                            games.append(game)
-                        break
-                except Exception as e:
-                    print(f"解析 Epic 遊戲時間時發生錯誤: {e}")
-            else:
-                continue
-            break
-
-
-    return games
-'''
 
 
 #gog

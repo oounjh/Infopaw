@@ -298,6 +298,23 @@ window.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+
+      const now = new Date();
+      if (platform === 'epic') {
+        data = data.filter(game => {
+          if (!game.startDate || !game.endDate) return true;
+          const start = new Date(game.startDate);
+          const end = new Date(game.endDate);
+          if (game.type === 'free') {
+            return now >= start && now <= end;
+          } else if (game.type === 'upcoming') {
+            return now < start;
+          }
+          return false;
+        });
+      }
+
+
       let filteredGames = data;
 
       if (discountRange) {
