@@ -215,7 +215,42 @@ def get_epic_free_games():
 
 
     for element in data['data']['Catalog']['searchStore']['elements']:
-        promotions = element.get('promotions') or ''
+        promotions = element.get('promotions') or {}
+        current_offers = promotions.get('promotionalOffers', [])
+        upcoming_offers = promotions.get('upcomingPromotionalOffers',[])
+
+
+        def is_actine(offers):
+            for promo in offers:
+                for offers in promo.get('promotionalOffers', []):
+                    start = offer.get('startDate')
+                    end = offer.get('endDate')
+                    if start <= now <=end:
+                        return True
+            return False
+        
+        def is_upcoming(offers):
+            for promo in offers:
+                for offer in promo.get('promotionalOffers', []):
+                    start = offer.get('startDate')
+                    if now < start: 
+                        return True
+            return False
+        
+        if is_actine(current_offers):
+            game = parse_epic_game(element, is_free=True)
+            if game:
+                games.append(game)
+
+        elif is_upcoming(upcoming_offers):
+            game - parse_epic_game(element, is_free=True)
+            if game:
+                game['type'] = 'upcoming'
+                games.append(game)
+
+    return games
+            
+'''
         if not promotions:
             continue
 
@@ -238,7 +273,7 @@ def get_epic_free_games():
 
 
     return games
-
+'''
 
 
 #gog
