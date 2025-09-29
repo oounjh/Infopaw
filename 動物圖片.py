@@ -8,11 +8,11 @@ from 自動化網站抓圖.photo_filter import get_exclude_keywords_for_category
 gallery_bp = Blueprint('gallery',__name__)
 
 API_KEY = "zJWYdamQugniIebxwRyGyWUKalFNbIcZuq0Hfsg6TG4zkGAjBLxO5ZbK"
-headers = {'Authorization': API_KEY}
+headers = {'Authorization': API_KEY} #發送請求借閱並用API_KEY通行
 
-
+# 預設備用圖片，如果 API 沒抓到圖就會使用
 fallback_images = {
-    'hamster': {
+    'hamster': { 
         'url':'/static/hamster.jpg',
         'photographer': '倉鼠',
         'photographer_url':'#',
@@ -21,12 +21,12 @@ fallback_images = {
 }
 
 
-
+# 定義函數：從 Pexels API 獲取指定動物圖片
 def get_animal_photos(query,per_page=20):
-    page = random.randint(1,20)
-    url = f'https://api.pexels.com/v1/search?query={query}&per_page={per_page}&page={page}'
-    response = requests.get(url,headers=headers)
-    data = response.json()
+    page = random.randint(1,20) #抓取隨機頁碼
+    url = f'https://api.pexels.com/v1/search?query={query}&per_page={per_page}&page={page}' #query=動物名稱，per_page=圖片數，page=抓取的頁碼
+    response = requests.get(url,headers=headers) #發送GET請求並用headers通行
+    data = response.json()#把傳回的json文字轉換成python可操作的資料
 
 
     photos = []
