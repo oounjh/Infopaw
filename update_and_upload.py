@@ -3,9 +3,10 @@ import requests
 from cache import cache, save_cache_to_file
 import datetime
 from 免費遊戲通知.game_scraper import (
-    get_steam_free_games, get_steam_free_permanent_games,
+    get_steam_free_games,
+    get_steam_free_permanent_games,
     #get_epic_free_games, 
-    get_gog_discount_games,
+    get_gog_discount_games
 )
 
 UPLOAD_URL = os.getenv('UPLOAD_URL') or 'https://infopaw.onrender.com/upload_cache'
