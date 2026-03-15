@@ -10,5 +10,5 @@ flask-cors==3.0.10
 typing-extensions==4.7.1
 pytz==2025.2
 Jinja2==3.1.6
-setuptools<82.0.0
+setuptools<=82.0.0
 pkg_resources
