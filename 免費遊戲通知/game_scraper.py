@@ -140,8 +140,7 @@ def get_steam_free_permanent_games():
 
 
     return games
-
-
+'''
 #Epic網頁請求
 def get_epic_games_raw():
     url = "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-Hant&country=TW&allowCountries=TW"
@@ -258,7 +257,7 @@ def get_epic_free_games():
                 games.append(game)
 
     return games
-
+'''
 
 
 
