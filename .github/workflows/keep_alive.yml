@@ -1,0 +1,13 @@
+name: InfoPaw High-Frequency Keep Alive
+
+on:
+  schedule:
+    - cron: '*/3 * * * *' # 每 3 分鐘呼叫一次
+  workflow_dispatch: # 可以手動點擊測試
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 喚醒 Render 網站
+        run: curl -I https://infopaw.onrender.com
