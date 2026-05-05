@@ -1,6 +1,6 @@
 {
   "steam_discount": {
-    "last_updated": "2026-05-05T15:53:06.892423",
+    "last_updated": "2026-05-05T17:23:48.082440",
     "data": [
       {
         "title": "Kerbal Space Program",
@@ -12,6 +12,18 @@
         "original_price": "$39.99",
         "final_price": "$9.99",
         "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Dead as Disco",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_231x87.jpg?t=1777993435",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_616x353.jpg?t=1777993435",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/3404260/Dead_as_Disco/",
+        "discount": "-20%",
+        "original_price": "$24.99",
+        "final_price": "$19.99",
+        "discount_pct_value": 20,
         "type": "discount"
       },
       {
@@ -51,6 +63,18 @@
         "type": "discount"
       },
       {
+        "title": "Diablo® IV",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/498049ac91ea5e17aefa19c7e27ecdcc20e1ea67/capsule_231x87_alt_assets_11.jpg?t=1777501665",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2344520/498049ac91ea5e17aefa19c7e27ecdcc20e1ea67/capsule_616x353.jpg?t=1777501665",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2344520/Diablo_IV/",
+        "discount": "-40%",
+        "original_price": "$49.99",
+        "final_price": "$29.99",
+        "discount_pct_value": 40,
+        "type": "discount"
+      },
+      {
         "title": "Heroes of Might and Magic: Olden Era",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3105440/740f5a03b7c20044f00041079d77b899a6a435c4/capsule_231x87.jpg?t=1777899549",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3105440/740f5a03b7c20044f00041079d77b899a6a435c4/capsule_616x353.jpg?t=1777899549",
@@ -84,6 +108,18 @@
         "original_price": "$49.99",
         "final_price": "$9.99",
         "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
+        "title": "MOTORSLICE",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2830030/capsule_231x87.jpg?t=1777989660",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2830030/capsule_616x353.jpg?t=1777989660",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2830030/MOTORSLICE/",
+        "discount": "-10%",
+        "original_price": "$19.99",
+        "final_price": "$17.99",
+        "discount_pct_value": 10,
         "type": "discount"
       },
       {
@@ -123,30 +159,6 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS Jedi: Survivor™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/capsule_231x87.jpg?t=1777391797",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/capsule_616x353.jpg?t=1777391797",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/",
-        "discount": "-85%",
-        "original_price": "$69.99",
-        "final_price": "$10.49",
-        "discount_pct_value": 85,
-        "type": "discount"
-      },
-      {
-        "title": "Dead as Disco",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_231x87.jpg?t=1777993435",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/c047bcb51618b08b5764cc3a5c15f1b50511e4ee/capsule_616x353.jpg?t=1777993435",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3404260/Dead_as_Disco/",
-        "discount": "-20%",
-        "original_price": "$24.99",
-        "final_price": "$19.99",
-        "discount_pct_value": 20,
-        "type": "discount"
-      },
-      {
         "title": "NBA 2K26",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3472040/356867a38f3bfef003b091766c4eebcf1f994df6/capsule_231x87.jpg?t=1776196566",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3472040/356867a38f3bfef003b091766c4eebcf1f994df6/capsule_616x353.jpg?t=1776196566",
@@ -159,15 +171,27 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ Battlefront™ II",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/capsule_231x87.jpg?t=1777393714",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/capsule_616x353.jpg?t=1777393714",
+        "title": "STAR WARS Jedi: Survivor™",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/capsule_231x87.jpg?t=1777391797",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1774580/capsule_616x353.jpg?t=1777391797",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/",
-        "discount": "-75%",
+        "link": "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/",
+        "discount": "-85%",
+        "original_price": "$69.99",
+        "final_price": "$10.49",
+        "discount_pct_value": 85,
+        "type": "discount"
+      },
+      {
+        "title": "Conan Exiles Enhanced",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440900/e306c9c1b85d6cbca8f1a132f0888b7163d9b3b1/capsule_231x87_alt_assets_7.jpg?t=1777993828",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/440900/e306c9c1b85d6cbca8f1a132f0888b7163d9b3b1/capsule_616x353.jpg?t=1777993828",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/440900/Conan_Exiles_Enhanced/",
+        "discount": "-25%",
         "original_price": "$39.99",
-        "final_price": "$9.99",
-        "discount_pct_value": 75,
+        "final_price": "$29.99",
+        "discount_pct_value": 25,
         "type": "discount"
       },
       {
@@ -183,18 +207,6 @@
         "type": "discount"
       },
       {
-        "title": "LEGO® Star Wars™: The Skywalker Saga",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/capsule_231x87.jpg?t=1747346983",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/capsule_616x353.jpg?t=1747346983",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/920210/LEGO_Star_Wars_The_Skywalker_Saga/",
-        "discount": "-80%",
-        "original_price": "$49.99",
-        "final_price": "$9.99",
-        "discount_pct_value": 80,
-        "type": "discount"
-      },
-      {
         "title": "Space Engineers",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/244850/fb2e727ebd7f66ca86bb5098c67a0826b6d59767/capsule_231x87.jpg?t=1777915333",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/244850/fb2e727ebd7f66ca86bb5098c67a0826b6d59767/capsule_616x353.jpg?t=1777915333",
@@ -207,15 +219,27 @@
         "type": "discount"
       },
       {
-        "title": "Victoria 3",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/529340/d72c006e9ca7e63defc3c71c7985e32711505ac3/capsule_231x87_alt_assets_9.jpg?t=1777914005",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/529340/d72c006e9ca7e63defc3c71c7985e32711505ac3/capsule_616x353.jpg?t=1777914005",
+        "title": "STAR WARS™ Battlefront™ II",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/capsule_231x87.jpg?t=1777393714",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/capsule_616x353.jpg?t=1777393714",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/529340/Victoria_3/",
-        "discount": "-70%",
+        "link": "https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/",
+        "discount": "-75%",
+        "original_price": "$39.99",
+        "final_price": "$9.99",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "LEGO® Star Wars™: The Skywalker Saga",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/capsule_231x87.jpg?t=1747346983",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/920210/capsule_616x353.jpg?t=1747346983",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/920210/LEGO_Star_Wars_The_Skywalker_Saga/",
+        "discount": "-80%",
         "original_price": "$49.99",
-        "final_price": "$14.99",
-        "discount_pct_value": 70,
+        "final_price": "$9.99",
+        "discount_pct_value": 80,
         "type": "discount"
       },
       {
@@ -231,6 +255,18 @@
         "type": "discount"
       },
       {
+        "title": "Victoria 3",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/529340/d72c006e9ca7e63defc3c71c7985e32711505ac3/capsule_231x87_alt_assets_9.jpg?t=1777914005",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/529340/d72c006e9ca7e63defc3c71c7985e32711505ac3/capsule_616x353.jpg?t=1777914005",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/529340/Victoria_3/",
+        "discount": "-70%",
+        "original_price": "$49.99",
+        "final_price": "$14.99",
+        "discount_pct_value": 70,
+        "type": "discount"
+      },
+      {
         "title": "Mortal Kombat 11",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/976310/capsule_231x87.jpg?t=1775508340",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/976310/capsule_616x353.jpg?t=1775508340",
@@ -240,18 +276,6 @@
         "original_price": "$49.99",
         "final_price": "$4.99",
         "discount_pct_value": 90,
-        "type": "discount"
-      },
-      {
-        "title": "MOTORSLICE",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2830030/capsule_231x87.jpg?t=1777989660",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2830030/capsule_616x353.jpg?t=1777989660",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2830030/MOTORSLICE/",
-        "discount": "-10%",
-        "original_price": "$19.99",
-        "final_price": "$17.99",
-        "discount_pct_value": 10,
         "type": "discount"
       },
       {
@@ -291,6 +315,18 @@
         "type": "discount"
       },
       {
+        "title": "Balatro",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/554b5f66f60e80b43f910cba21d23af16ed897be/capsule_231x87.jpg?t=1774958057",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/554b5f66f60e80b43f910cba21d23af16ed897be/capsule_616x353.jpg?t=1774958057",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2379780/Balatro/",
+        "discount": "-20%",
+        "original_price": "$14.99",
+        "final_price": "$11.99",
+        "discount_pct_value": 20,
+        "type": "discount"
+      },
+      {
         "title": "Persona 5 Royal",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/capsule_231x87.jpg?t=1763530018",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/capsule_616x353.jpg?t=1763530018",
@@ -303,15 +339,15 @@
         "type": "discount"
       },
       {
-        "title": "Balatro",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/554b5f66f60e80b43f910cba21d23af16ed897be/capsule_231x87.jpg?t=1774958057",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/554b5f66f60e80b43f910cba21d23af16ed897be/capsule_616x353.jpg?t=1774958057",
+        "title": "Gambonanza",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509230/20d596916f212bb1aa334c6d872ac65567b19303/capsule_231x87.jpg?t=1777641170",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509230/20d596916f212bb1aa334c6d872ac65567b19303/capsule_616x353.jpg?t=1777641170",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2379780/Balatro/",
-        "discount": "-20%",
+        "link": "https://store.steampowered.com/app/3509230/Gambonanza/",
+        "discount": "-35%",
         "original_price": "$14.99",
-        "final_price": "$11.99",
-        "discount_pct_value": 20,
+        "final_price": "$9.74",
+        "discount_pct_value": 35,
         "type": "discount"
       },
       {
@@ -327,15 +363,15 @@
         "type": "discount"
       },
       {
-        "title": "Gambonanza",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509230/20d596916f212bb1aa334c6d872ac65567b19303/capsule_231x87.jpg?t=1777641170",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509230/20d596916f212bb1aa334c6d872ac65567b19303/capsule_616x353.jpg?t=1777641170",
+        "title": "Noita",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/capsule_231x87.jpg?t=1675987871",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/capsule_616x353.jpg?t=1675987871",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/3509230/Gambonanza/",
-        "discount": "-35%",
-        "original_price": "$14.99",
-        "final_price": "$9.74",
-        "discount_pct_value": 35,
+        "link": "https://store.steampowered.com/app/881100/Noita/",
+        "discount": "-60%",
+        "original_price": "$19.99",
+        "final_price": "$7.99",
+        "discount_pct_value": 60,
         "type": "discount"
       },
       {
@@ -375,18 +411,6 @@
         "type": "discount"
       },
       {
-        "title": "Noita",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/capsule_231x87.jpg?t=1675987871",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/881100/capsule_616x353.jpg?t=1675987871",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/881100/Noita/",
-        "discount": "-60%",
-        "original_price": "$19.99",
-        "final_price": "$7.99",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
         "title": "Librarian: Tidy Up the Arcane Library!",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4197610/f0d3c0ed4a31473df3d912d95b63a1fcc7feef97/capsule_231x87.jpg?t=1777553917",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4197610/f0d3c0ed4a31473df3d912d95b63a1fcc7feef97/capsule_616x353.jpg?t=1777553917",
@@ -396,18 +420,6 @@
         "original_price": "$5.99",
         "final_price": "$5.09",
         "discount_pct_value": 15,
-        "type": "discount"
-      },
-      {
-        "title": "LEGO® Star Wars™: The Skywalker Saga Galactic Edition",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/785847/capsule_231x87.jpg?t=1698432746",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/785847/capsule_616x353.jpg?t=1698432746",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/sub/785847/",
-        "discount": "-80%",
-        "original_price": "$69.99",
-        "final_price": "$13.99",
-        "discount_pct_value": 80,
         "type": "discount"
       },
       {
@@ -423,18 +435,6 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32430/capsule_231x87.jpg?t=1741729267",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32430/capsule_616x353.jpg?t=1741729267",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/32430/STAR_WARS__The_Force_Unleashed_Ultimate_Sith_Edition/",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
         "title": "R.E.P.O.",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_231x87.jpg?t=1765552338",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/28c1bb423e9af8646047e9e881c3a0ac121647f6/capsule_616x353.jpg?t=1765552338",
@@ -447,6 +447,18 @@
         "type": "discount"
       },
       {
+        "title": "LEGO® Star Wars™: The Skywalker Saga Galactic Edition",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/785847/capsule_231x87.jpg?t=1698432746",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/785847/capsule_616x353.jpg?t=1698432746",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/sub/785847/",
+        "discount": "-80%",
+        "original_price": "$69.99",
+        "final_price": "$13.99",
+        "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
         "title": "Dispatch",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/925ffa7e3699d5c9c1369be5d4c3369f0e907e00/capsule_231x87.jpg?t=1775166432",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2592160/925ffa7e3699d5c9c1369be5d4c3369f0e907e00/capsule_616x353.jpg?t=1775166432",
@@ -455,30 +467,6 @@
         "discount": "-20%",
         "original_price": "$29.99",
         "final_price": "$23.99",
-        "discount_pct_value": 20,
-        "type": "discount"
-      },
-      {
-        "title": "SILENT HILL f",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/0059b56f4400fe95555b8145d5f8f05b160a54e5/capsule_231x87.jpg?t=1770169624",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/0059b56f4400fe95555b8145d5f8f05b160a54e5/capsule_616x353.jpg?t=1770169624",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2947440/SILENT_HILL_f/",
-        "discount": "-50%",
-        "original_price": "$69.99",
-        "final_price": "$34.99",
-        "discount_pct_value": 50,
-        "type": "discount"
-      },
-      {
-        "title": "Scritchy Scratchy",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3948120/2dbc15d41960cf963c27e2b22f906e0e6dd5a980/capsule_231x87.jpg?t=1773831686",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3948120/2dbc15d41960cf963c27e2b22f906e0e6dd5a980/capsule_616x353.jpg?t=1773831686",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3948120/Scritchy_Scratchy/",
-        "discount": "-20%",
-        "original_price": "$6.99",
-        "final_price": "$5.59",
         "discount_pct_value": 20,
         "type": "discount"
       },
@@ -495,27 +483,27 @@
         "type": "discount"
       },
       {
-        "title": "Cities: Skylines",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/4cf458b43b41e4f86d3e4e604e7a7577c7926b01/capsule_231x87.jpg?t=1777568415",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/4cf458b43b41e4f86d3e4e604e7a7577c7926b01/capsule_616x353.jpg?t=1777568415",
+        "title": "Scritchy Scratchy",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3948120/2dbc15d41960cf963c27e2b22f906e0e6dd5a980/capsule_231x87.jpg?t=1773831686",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3948120/2dbc15d41960cf963c27e2b22f906e0e6dd5a980/capsule_616x353.jpg?t=1773831686",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/255710/Cities_Skylines/",
-        "discount": "-70%",
-        "original_price": "$29.99",
-        "final_price": "$8.99",
-        "discount_pct_value": 70,
+        "link": "https://store.steampowered.com/app/3948120/Scritchy_Scratchy/",
+        "discount": "-20%",
+        "original_price": "$6.99",
+        "final_price": "$5.59",
+        "discount_pct_value": 20,
         "type": "discount"
       },
       {
-        "title": "Split Fiction",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_616x353.jpg?t=1763484567",
+        "title": "For The King II",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676840/capsule_231x87.jpg?t=1777998184",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676840/capsule_616x353.jpg?t=1777998184",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2001120/Split_Fiction/",
-        "discount": "-30%",
-        "original_price": "$49.99",
-        "final_price": "$34.99",
-        "discount_pct_value": 30,
+        "link": "https://store.steampowered.com/app/1676840/For_The_King_II/",
+        "discount": "-66%",
+        "original_price": "$24.99",
+        "final_price": "$8.49",
+        "discount_pct_value": 66,
         "type": "discount"
       },
       {
@@ -531,6 +519,18 @@
         "type": "discount"
       },
       {
+        "title": "Split Fiction",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_231x87.jpg?t=1763484567",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2001120/1988bcdc421d71cbe4c8c07940967e7a0cd752be/capsule_616x353.jpg?t=1763484567",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2001120/Split_Fiction/",
+        "discount": "-30%",
+        "original_price": "$49.99",
+        "final_price": "$34.99",
+        "discount_pct_value": 30,
+        "type": "discount"
+      },
+      {
         "title": "Kerbal Space Program: Making History Expansion",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/283740/capsule_231x87.jpg?t=1738037589",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/283740/capsule_616x353.jpg?t=1738037589",
@@ -543,15 +543,15 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™: The Force Unleashed™ II",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32500/capsule_231x87.jpg?t=1741729220",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32500/capsule_616x353.jpg?t=1741729220",
+        "title": "Cities: Skylines",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/4cf458b43b41e4f86d3e4e604e7a7577c7926b01/capsule_231x87.jpg?t=1777568415",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/4cf458b43b41e4f86d3e4e604e7a7577c7926b01/capsule_616x353.jpg?t=1777568415",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/32500/STAR_WARS_The_Force_Unleashed_II/",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
+        "link": "https://store.steampowered.com/app/255710/Cities_Skylines/",
+        "discount": "-70%",
+        "original_price": "$29.99",
+        "final_price": "$8.99",
+        "discount_pct_value": 70,
         "type": "discount"
       },
       {
@@ -579,6 +579,18 @@
         "type": "discount"
       },
       {
+        "title": "Phasmophobia",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/739630/4d832596703e9ee22fd3f6bac50067989757d68d/capsule_231x87_alt_assets_9.jpg?t=1777993469",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/739630/4d832596703e9ee22fd3f6bac50067989757d68d/capsule_616x353.jpg?t=1777993469",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/739630/Phasmophobia/",
+        "discount": "-30%",
+        "original_price": "$19.99",
+        "final_price": "$13.99",
+        "discount_pct_value": 30,
+        "type": "discount"
+      },
+      {
         "title": "FINAL FANTASY VII REMAKE INTERGRADE",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/capsule_231x87.jpg?t=1773895755",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/capsule_616x353.jpg?t=1773895755",
@@ -591,15 +603,15 @@
         "type": "discount"
       },
       {
-        "title": "Sonic Racing: CrossWorlds",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2486820/bb5c228bb6cab1ab01f1ac3216814de033758413/capsule_231x87_alt_assets_7.jpg?t=1777437605",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2486820/bb5c228bb6cab1ab01f1ac3216814de033758413/capsule_616x353.jpg?t=1777437605",
+        "title": "Dead as Disco Streamer Safe Soundtrack Vol. 1",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4647130/a575ebf0d6c3c62e36d4a5e1f0958463389bb429/capsule_231x87.jpg?t=1777993485",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4647130/a575ebf0d6c3c62e36d4a5e1f0958463389bb429/capsule_616x353.jpg?t=1777993485",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2486820/Sonic_Racing_CrossWorlds/",
-        "discount": "-40%",
-        "original_price": "$69.99",
-        "final_price": "$41.99",
-        "discount_pct_value": 40,
+        "link": "https://store.steampowered.com/app/4647130/Dead_as_Disco_Streamer_Safe_Soundtrack_Vol_1/",
+        "discount": "-20%",
+        "original_price": "$9.99",
+        "final_price": "$7.99",
+        "discount_pct_value": 20,
         "type": "discount"
       },
       {
@@ -627,6 +639,18 @@
         "type": "discount"
       },
       {
+        "title": "Sonic Racing: CrossWorlds",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2486820/bb5c228bb6cab1ab01f1ac3216814de033758413/capsule_231x87_alt_assets_7.jpg?t=1777437605",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2486820/bb5c228bb6cab1ab01f1ac3216814de033758413/capsule_616x353.jpg?t=1777437605",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2486820/Sonic_Racing_CrossWorlds/",
+        "discount": "-40%",
+        "original_price": "$69.99",
+        "final_price": "$41.99",
+        "discount_pct_value": 40,
+        "type": "discount"
+      },
+      {
         "title": "Le Mans Ultimate",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399420/2da0772b63dcb1b58d3dea234fb578de1880f9c3/capsule_231x87.jpg?t=1774438188",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2399420/2da0772b63dcb1b58d3dea234fb578de1880f9c3/capsule_616x353.jpg?t=1774438188",
@@ -636,78 +660,6 @@
         "original_price": "$39.99",
         "final_price": "$27.99",
         "discount_pct_value": 30,
-        "type": "discount"
-      },
-      {
-        "title": "Pacific Drive",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1458140/7c7238c946abefe1c7bc08e69f84af015e7c39ed/capsule_231x87.jpg?t=1763777212",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1458140/7c7238c946abefe1c7bc08e69f84af015e7c39ed/capsule_616x353.jpg?t=1763777212",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1458140/Pacific_Drive/",
-        "discount": "-67%",
-        "original_price": "$29.99",
-        "final_price": "$9.89",
-        "discount_pct_value": 67,
-        "type": "discount"
-      },
-      {
-        "title": "SILENT HILL 2",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/capsule_231x87.jpg?t=1744248682",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/capsule_616x353.jpg?t=1744248682",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2124490/SILENT_HILL_2/",
-        "discount": "-50%",
-        "original_price": "$69.99",
-        "final_price": "$34.99",
-        "discount_pct_value": 50,
-        "type": "discount"
-      },
-      {
-        "title": "Trails in the Sky 1st Chapter",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3375780/74827d6ceab6ef1722b86eb1bfb49b879cb3c12d/capsule_231x87.jpg?t=1777572632",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3375780/74827d6ceab6ef1722b86eb1bfb49b879cb3c12d/capsule_616x353.jpg?t=1777572632",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3375780/Trails_in_the_Sky_1st_Chapter/",
-        "discount": "-35%",
-        "original_price": "$59.99",
-        "final_price": "$38.99",
-        "discount_pct_value": 35,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™: Bounty Hunter™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2419090/capsule_231x87.jpg?t=1742931481",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2419090/capsule_616x353.jpg?t=1742931481",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2419090/STAR_WARS_Bounty_Hunter/",
-        "discount": "-65%",
-        "original_price": "$19.99",
-        "final_price": "$6.99",
-        "discount_pct_value": 65,
-        "type": "discount"
-      },
-      {
-        "title": "FINAL FANTASY XVI",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_231x87.jpg?t=1773294537",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1773294537",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2515020/FINAL_FANTASY_XVI/",
-        "discount": "-60%",
-        "original_price": "$49.99",
-        "final_price": "$19.99",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Empire at War - Gold Pack",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32470/capsule_231x87.jpg?t=1741729002",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32470/capsule_616x353.jpg?t=1741729002",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/32470/STAR_WARS_Empire_at_War__Gold_Pack/",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
         "type": "discount"
       },
       {
@@ -723,15 +675,39 @@
         "type": "discount"
       },
       {
-        "title": "Die in the Dungeon",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2026820/52cd98512901f798da435aae917511b81db6fff7/capsule_231x87.jpg?t=1777882791",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2026820/52cd98512901f798da435aae917511b81db6fff7/capsule_616x353.jpg?t=1777882791",
+        "title": "STAR WARS™: Bounty Hunter™",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2419090/capsule_231x87.jpg?t=1742931481",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2419090/capsule_616x353.jpg?t=1742931481",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2026820/Die_in_the_Dungeon/",
-        "discount": "-35%",
-        "original_price": "$14.99",
-        "final_price": "$9.74",
-        "discount_pct_value": 35,
+        "link": "https://store.steampowered.com/app/2419090/STAR_WARS_Bounty_Hunter/",
+        "discount": "-65%",
+        "original_price": "$19.99",
+        "final_price": "$6.99",
+        "discount_pct_value": 65,
+        "type": "discount"
+      },
+      {
+        "title": "Conan Exiles Enhanced: Isle of Siptah",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1206200/capsule_231x87.jpg?t=1777993976",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1206200/capsule_616x353.jpg?t=1777993976",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1206200/Conan_Exiles_Enhanced_Isle_of_Siptah/",
+        "discount": "-50%",
+        "original_price": "$19.99",
+        "final_price": "$9.99",
+        "discount_pct_value": 50,
+        "type": "discount"
+      },
+      {
+        "title": "FINAL FANTASY XVI",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_231x87.jpg?t=1773294537",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2515020/capsule_616x353.jpg?t=1773294537",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2515020/FINAL_FANTASY_XVI/",
+        "discount": "-60%",
+        "original_price": "$49.99",
+        "final_price": "$19.99",
+        "discount_pct_value": 60,
         "type": "discount"
       },
       {
@@ -747,51 +723,27 @@
         "type": "discount"
       },
       {
-        "title": "Red Dead Redemption",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2668510/c9c0dd50da5b3543c74beb11b6c806fb9fd88a8c/capsule_231x87.jpg?t=1741118459",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2668510/c9c0dd50da5b3543c74beb11b6c806fb9fd88a8c/capsule_616x353.jpg?t=1741118459",
+        "title": "Trails in the Sky 1st Chapter",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3375780/74827d6ceab6ef1722b86eb1bfb49b879cb3c12d/capsule_231x87.jpg?t=1777572632",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3375780/74827d6ceab6ef1722b86eb1bfb49b879cb3c12d/capsule_616x353.jpg?t=1777572632",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2668510/Red_Dead_Redemption/",
-        "discount": "-50%",
-        "original_price": "$49.99",
-        "final_price": "$24.99",
-        "discount_pct_value": 50,
+        "link": "https://store.steampowered.com/app/3375780/Trails_in_the_Sky_1st_Chapter/",
+        "discount": "-35%",
+        "original_price": "$59.99",
+        "final_price": "$38.99",
+        "discount_pct_value": 35,
         "type": "discount"
       },
       {
-        "title": "LEGO® Star Wars™ - The Complete Saga",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32440/capsule_231x87.jpg?t=1604517910",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32440/capsule_616x353.jpg?t=1604517910",
+        "title": "Die in the Dungeon",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2026820/52cd98512901f798da435aae917511b81db6fff7/capsule_231x87.jpg?t=1777882791",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2026820/52cd98512901f798da435aae917511b81db6fff7/capsule_616x353.jpg?t=1777882791",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/32440/LEGO_Star_Wars__The_Complete_Saga/",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "Prime Monster",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3214480/8d249acf4dfc8904ae8ed75517b3c625e61648fc/capsule_231x87.jpg?t=1777993657",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3214480/8d249acf4dfc8904ae8ed75517b3c625e61648fc/capsule_616x353.jpg?t=1777993657",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3214480/Prime_Monster/",
-        "discount": "-15%",
-        "original_price": "$19.99",
-        "final_price": "$16.99",
-        "discount_pct_value": 15,
-        "type": "discount"
-      },
-      {
-        "title": "Hunt: Showdown 1896",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/37141786f337b23a16876e66834e6309387685fb/capsule_231x87_alt_assets_24.jpg?t=1777973821",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/37141786f337b23a16876e66834e6309387685fb/capsule_616x353.jpg?t=1777973821",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/594650/Hunt_Showdown_1896/",
-        "discount": "-60%",
-        "original_price": "$39.99",
-        "final_price": "$15.99",
-        "discount_pct_value": 60,
+        "link": "https://store.steampowered.com/app/2026820/Die_in_the_Dungeon/",
+        "discount": "-35%",
+        "original_price": "$14.99",
+        "final_price": "$9.74",
+        "discount_pct_value": 35,
         "type": "discount"
       },
       {
@@ -807,6 +759,18 @@
         "type": "discount"
       },
       {
+        "title": "Prime Monster",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3214480/8d249acf4dfc8904ae8ed75517b3c625e61648fc/capsule_231x87.jpg?t=1777993657",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3214480/8d249acf4dfc8904ae8ed75517b3c625e61648fc/capsule_616x353.jpg?t=1777993657",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/3214480/Prime_Monster/",
+        "discount": "-15%",
+        "original_price": "$19.99",
+        "final_price": "$16.99",
+        "discount_pct_value": 15,
+        "type": "discount"
+      },
+      {
         "title": "Hyper Light Drifter",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257850/08c20a6af56d22127aa677762a5d76d310cc591a/capsule_231x87.jpg?t=1762899660",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257850/08c20a6af56d22127aa677762a5d76d310cc591a/capsule_616x353.jpg?t=1762899660",
@@ -816,6 +780,54 @@
         "original_price": "$19.99",
         "final_price": "$5.99",
         "discount_pct_value": 70,
+        "type": "discount"
+      },
+      {
+        "title": "Pacific Drive",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1458140/7c7238c946abefe1c7bc08e69f84af015e7c39ed/capsule_231x87.jpg?t=1763777212",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1458140/7c7238c946abefe1c7bc08e69f84af015e7c39ed/capsule_616x353.jpg?t=1763777212",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1458140/Pacific_Drive/",
+        "discount": "-67%",
+        "original_price": "$29.99",
+        "final_price": "$9.89",
+        "discount_pct_value": 67,
+        "type": "discount"
+      },
+      {
+        "title": "Hunt: Showdown 1896",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/37141786f337b23a16876e66834e6309387685fb/capsule_231x87_alt_assets_24.jpg?t=1777973821",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/37141786f337b23a16876e66834e6309387685fb/capsule_616x353.jpg?t=1777973821",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/594650/Hunt_Showdown_1896/",
+        "discount": "-60%",
+        "original_price": "$39.99",
+        "final_price": "$15.99",
+        "discount_pct_value": 60,
+        "type": "discount"
+      },
+      {
+        "title": "Red Dead Redemption",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2668510/c9c0dd50da5b3543c74beb11b6c806fb9fd88a8c/capsule_231x87.jpg?t=1741118459",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2668510/c9c0dd50da5b3543c74beb11b6c806fb9fd88a8c/capsule_616x353.jpg?t=1741118459",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2668510/Red_Dead_Redemption/",
+        "discount": "-50%",
+        "original_price": "$49.99",
+        "final_price": "$24.99",
+        "discount_pct_value": 50,
+        "type": "discount"
+      },
+      {
+        "title": "Global Rescue",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873660/65a0a5d82f0549f011a564df01dd0c74cef44902/capsule_231x87.jpg?t=1777303115",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873660/65a0a5d82f0549f011a564df01dd0c74cef44902/capsule_616x353.jpg?t=1777303115",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2873660/Global_Rescue/",
+        "discount": "-20%",
+        "original_price": "$24.99",
+        "final_price": "$19.99",
+        "discount_pct_value": 20,
         "type": "discount"
       },
       {
@@ -831,30 +843,6 @@
         "type": "discount"
       },
       {
-        "title": "For The King II",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676840/capsule_231x87.jpg?t=1777972899",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1676840/capsule_616x353.jpg?t=1777972899",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1676840/For_The_King_II/",
-        "discount": "-66%",
-        "original_price": "$24.99",
-        "final_price": "$8.49",
-        "discount_pct_value": 66,
-        "type": "discount"
-      },
-      {
-        "title": "Oaken Tower",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3400960/282f33da8d12c4b0f68fdf79f27c1338b0672c89/capsule_231x87.jpg?t=1777391953",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3400960/282f33da8d12c4b0f68fdf79f27c1338b0672c89/capsule_616x353.jpg?t=1777391953",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3400960/Oaken_Tower/",
-        "discount": "-20%",
-        "original_price": "$9.99",
-        "final_price": "$7.99",
-        "discount_pct_value": 20,
-        "type": "discount"
-      },
-      {
         "title": "U.V.S. Nirmana",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2536720/23cd277fb9638e86c343ffd19f19e61c7bbda786/capsule_231x87.jpg?t=1777916744",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2536720/23cd277fb9638e86c343ffd19f19e61c7bbda786/capsule_616x353.jpg?t=1777916744",
@@ -867,50 +855,14 @@
         "type": "discount"
       },
       {
-        "title": "DJMAX RESPECT V",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_231x87.jpg?t=1772009068",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_616x353.jpg?t=1772009068",
+        "title": "Oaken Tower",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3400960/282f33da8d12c4b0f68fdf79f27c1338b0672c89/capsule_231x87.jpg?t=1777391953",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3400960/282f33da8d12c4b0f68fdf79f27c1338b0672c89/capsule_616x353.jpg?t=1777391953",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/960170/DJMAX_RESPECT_V/",
-        "discount": "-80%",
-        "original_price": "$49.99",
-        "final_price": "$9.99",
-        "discount_pct_value": 80,
-        "type": "discount"
-      },
-      {
-        "title": "Peglin",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296610/16bdac155cbb967459b576ebe2bd34efef6b0fec/capsule_231x87.jpg?t=1774907908",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296610/16bdac155cbb967459b576ebe2bd34efef6b0fec/capsule_616x353.jpg?t=1774907908",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1296610/Peglin/",
-        "discount": "-40%",
-        "original_price": "$19.99",
-        "final_price": "$11.99",
-        "discount_pct_value": 40,
-        "type": "discount"
-      },
-      {
-        "title": "Cardboard Town",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198070/3916f0bed38bc73927aa95b6609fb7eaf79bfeff/capsule_231x87.jpg?t=1777955639",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198070/3916f0bed38bc73927aa95b6609fb7eaf79bfeff/capsule_616x353.jpg?t=1777955639",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2198070/Cardboard_Town/",
-        "discount": "-80%",
-        "original_price": "$19.99",
-        "final_price": "$3.99",
-        "discount_pct_value": 80,
-        "type": "discount"
-      },
-      {
-        "title": "Global Rescue",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873660/65a0a5d82f0549f011a564df01dd0c74cef44902/capsule_231x87.jpg?t=1777303115",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873660/65a0a5d82f0549f011a564df01dd0c74cef44902/capsule_616x353.jpg?t=1777303115",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2873660/Global_Rescue/",
+        "link": "https://store.steampowered.com/app/3400960/Oaken_Tower/",
         "discount": "-20%",
-        "original_price": "$24.99",
-        "final_price": "$19.99",
+        "original_price": "$9.99",
+        "final_price": "$7.99",
         "discount_pct_value": 20,
         "type": "discount"
       },
@@ -927,6 +879,18 @@
         "type": "discount"
       },
       {
+        "title": "Peglin",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296610/16bdac155cbb967459b576ebe2bd34efef6b0fec/capsule_231x87.jpg?t=1774907908",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1296610/16bdac155cbb967459b576ebe2bd34efef6b0fec/capsule_616x353.jpg?t=1774907908",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1296610/Peglin/",
+        "discount": "-40%",
+        "original_price": "$19.99",
+        "final_price": "$11.99",
+        "discount_pct_value": 40,
+        "type": "discount"
+      },
+      {
         "title": "The Spell Brigade",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2904000/07f24b85c907e4ecabe2dcd1a8476a4814f2f790/capsule_231x87.jpg?t=1777928633",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2904000/07f24b85c907e4ecabe2dcd1a8476a4814f2f790/capsule_616x353.jpg?t=1777928633",
@@ -936,30 +900,6 @@
         "original_price": "$12.99",
         "final_price": "$7.79",
         "discount_pct_value": 40,
-        "type": "discount"
-      },
-      {
-        "title": "F1® 25",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_231x87.jpg?t=1777395603",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_616x353.jpg?t=1777395603",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/3059520/F1_25/",
-        "discount": "-60%",
-        "original_price": "$59.99",
-        "final_price": "$23.99",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Knights of the Old Republic™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32370/capsule_231x87.jpg?t=1681144833",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32370/capsule_616x353.jpg?t=1681144833",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
         "type": "discount"
       },
       {
@@ -987,6 +927,18 @@
         "type": "discount"
       },
       {
+        "title": "DJMAX RESPECT V",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_231x87.jpg?t=1772009068",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/f00db0558f4b4bd8965fd2e72aae3802ea46234b/capsule_616x353.jpg?t=1772009068",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/960170/DJMAX_RESPECT_V/",
+        "discount": "-80%",
+        "original_price": "$49.99",
+        "final_price": "$9.99",
+        "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
         "title": "It Takes Two",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/capsule_231x87.jpg?t=1777395376",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/capsule_616x353.jpg?t=1777395376",
@@ -999,15 +951,15 @@
         "type": "discount"
       },
       {
-        "title": "Nioh 3",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681010/19b0758706fefb5c06a6183365fd62dafe2bf914/capsule_231x87.jpg?t=1772090941",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3681010/19b0758706fefb5c06a6183365fd62dafe2bf914/capsule_616x353.jpg?t=1772090941",
+        "title": "F1® 25",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_231x87.jpg?t=1777395603",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3059520/e5a63913fdbb2b641e64fddee542ab4c946b21cd/capsule_616x353.jpg?t=1777395603",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/3681010/Nioh_3/",
-        "discount": "-20%",
-        "original_price": "$69.99",
-        "final_price": "$55.99",
-        "discount_pct_value": 20,
+        "link": "https://store.steampowered.com/app/3059520/F1_25/",
+        "discount": "-60%",
+        "original_price": "$59.99",
+        "final_price": "$23.99",
+        "discount_pct_value": 60,
         "type": "discount"
       },
       {
@@ -1019,6 +971,42 @@
         "discount": "-50%",
         "original_price": "$24.99",
         "final_price": "$12.49",
+        "discount_pct_value": 50,
+        "type": "discount"
+      },
+      {
+        "title": "Cardboard Town",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198070/3916f0bed38bc73927aa95b6609fb7eaf79bfeff/capsule_231x87.jpg?t=1777955639",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198070/3916f0bed38bc73927aa95b6609fb7eaf79bfeff/capsule_616x353.jpg?t=1777955639",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2198070/Cardboard_Town/",
+        "discount": "-80%",
+        "original_price": "$19.99",
+        "final_price": "$3.99",
+        "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
+        "title": "Inscryption",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/capsule_231x87.jpg?t=1777572925",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/capsule_616x353.jpg?t=1777572925",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1092790/Inscryption/",
+        "discount": "-60%",
+        "original_price": "$19.99",
+        "final_price": "$7.99",
+        "discount_pct_value": 60,
+        "type": "discount"
+      },
+      {
+        "title": "Metaphor: ReFantazio",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2679460/capsule_231x87.jpg?t=1764776325",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2679460/capsule_616x353.jpg?t=1764776325",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/",
+        "discount": "-50%",
+        "original_price": "$69.99",
+        "final_price": "$34.99",
         "discount_pct_value": 50,
         "type": "discount"
       },
@@ -1035,42 +1023,6 @@
         "type": "discount"
       },
       {
-        "title": "Inscryption",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/capsule_231x87.jpg?t=1777572925",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/capsule_616x353.jpg?t=1777572925",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1092790/Inscryption/",
-        "discount": "-60%",
-        "original_price": "$19.99",
-        "final_price": "$7.99",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Knights of the Old Republic™ II - The Sith Lords™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/208580/capsule_231x87.jpg?t=1699053053",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/208580/capsule_616x353.jpg?t=1699053053",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/208580/STAR_WARS_Knights_of_the_Old_Republic_II__The_Sith_Lords/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "Metaphor: ReFantazio",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2679460/capsule_231x87.jpg?t=1764776325",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2679460/capsule_616x353.jpg?t=1764776325",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/",
-        "discount": "-50%",
-        "original_price": "$69.99",
-        "final_price": "$34.99",
-        "discount_pct_value": 50,
-        "type": "discount"
-      },
-      {
         "title": "IL-2 Sturmovik: Battle of Stalingrad",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/307960/capsule_231x87.jpg?t=1773937003",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/307960/capsule_616x353.jpg?t=1773937003",
@@ -1080,54 +1032,6 @@
         "original_price": "$49.99",
         "final_price": "$9.49",
         "discount_pct_value": 81,
-        "type": "discount"
-      },
-      {
-        "title": "Yunyun Syndrome!? Rhythm Psychosis",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2914150/28b42dfbb26fe6437e647e6acaf0b5f522eaff25/capsule_231x87.jpg?t=1777264751",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2914150/28b42dfbb26fe6437e647e6acaf0b5f522eaff25/capsule_616x353.jpg?t=1777264751",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2914150/Yunyun_Syndrome_Rhythm_Psychosis/",
-        "discount": "-10%",
-        "original_price": "$16.99",
-        "final_price": "$15.29",
-        "discount_pct_value": 10,
-        "type": "discount"
-      },
-      {
-        "title": "Space Engineers 2",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133870/1dcf746525e2dc3825f87b37cf7c405e08dcffcb/capsule_231x87_alt_assets_0.jpg?t=1774438626",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133870/1dcf746525e2dc3825f87b37cf7c405e08dcffcb/capsule_616x353.jpg?t=1774438626",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1133870/Space_Engineers_2/",
-        "discount": "-20%",
-        "original_price": "$29.99",
-        "final_price": "$23.99",
-        "discount_pct_value": 20,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Battlefront II (Classic, 2005)",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6060/capsule_231x87.jpg?t=1707697325",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6060/capsule_616x353.jpg?t=1707697325",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/6060/STAR_WARS_Battlefront_II_Classic_2005/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "FINAL FANTASY VII REBIRTH",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/159fb57397e436d35ae20ba0f62ba7a7f2974cb9/capsule_231x87.jpg?t=1775124617",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/159fb57397e436d35ae20ba0f62ba7a7f2974cb9/capsule_616x353.jpg?t=1775124617",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2909400/FINAL_FANTASY_VII_REBIRTH/",
-        "discount": "-40%",
-        "original_price": "$49.99",
-        "final_price": "$29.99",
-        "discount_pct_value": 40,
         "type": "discount"
       },
       {
@@ -1143,27 +1047,15 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ Republic Commando™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6000/capsule_231x87.jpg?t=1741729103",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6000/capsule_616x353.jpg?t=1741729103",
+        "title": "Space Engineers 2",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133870/1dcf746525e2dc3825f87b37cf7c405e08dcffcb/capsule_231x87_alt_assets_0.jpg?t=1774438626",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1133870/1dcf746525e2dc3825f87b37cf7c405e08dcffcb/capsule_616x353.jpg?t=1774438626",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/6000/STAR_WARS_Republic_Commando/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "LEGO® Star Wars™ III - The Clone Wars™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32510/capsule_231x87.jpg?t=1699053866",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/32510/capsule_616x353.jpg?t=1699053866",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/32510/LEGO_Star_Wars_III__The_Clone_Wars/",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
+        "link": "https://store.steampowered.com/app/1133870/Space_Engineers_2/",
+        "discount": "-20%",
+        "original_price": "$29.99",
+        "final_price": "$23.99",
+        "discount_pct_value": 20,
         "type": "discount"
       },
       {
@@ -1179,18 +1071,6 @@
         "type": "discount"
       },
       {
-        "title": "DREDGE",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562430/d6c28e6402e85395421ac06ac86cdb0e28b48e27/capsule_231x87.jpg?t=1766050211",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562430/d6c28e6402e85395421ac06ac86cdb0e28b48e27/capsule_616x353.jpg?t=1766050211",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1562430/DREDGE/",
-        "discount": "-60%",
-        "original_price": "$26.99",
-        "final_price": "$10.79",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
         "title": "STAR WARS™: Dark Forces Remaster",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2292260/capsule_231x87.jpg?t=1774275644",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2292260/capsule_616x353.jpg?t=1774275644",
@@ -1203,15 +1083,39 @@
         "type": "discount"
       },
       {
-        "title": "FATAL FRAME II: Crimson Butterfly REMAKE",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3920610/95aebd7bc790bbc0150b7a366c002a73611a8901/capsule_231x87.jpg?t=1774575080",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3920610/95aebd7bc790bbc0150b7a366c002a73611a8901/capsule_616x353.jpg?t=1774575080",
+        "title": "Europa Universalis V",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_231x87.jpg?t=1777899995",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_616x353.jpg?t=1777899995",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/3920610/FATAL_FRAME_II_Crimson_Butterfly_REMAKE/",
-        "discount": "-20%",
+        "link": "https://store.steampowered.com/app/3450310/Europa_Universalis_V/",
+        "discount": "-10%",
+        "original_price": "$59.99",
+        "final_price": "$53.99",
+        "discount_pct_value": 10,
+        "type": "discount"
+      },
+      {
+        "title": "FINAL FANTASY VII REBIRTH",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/159fb57397e436d35ae20ba0f62ba7a7f2974cb9/capsule_231x87.jpg?t=1775124617",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/159fb57397e436d35ae20ba0f62ba7a7f2974cb9/capsule_616x353.jpg?t=1775124617",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2909400/FINAL_FANTASY_VII_REBIRTH/",
+        "discount": "-40%",
         "original_price": "$49.99",
-        "final_price": "$39.99",
-        "discount_pct_value": 20,
+        "final_price": "$29.99",
+        "discount_pct_value": 40,
+        "type": "discount"
+      },
+      {
+        "title": "Yunyun Syndrome!? Rhythm Psychosis",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2914150/28b42dfbb26fe6437e647e6acaf0b5f522eaff25/capsule_231x87.jpg?t=1777264751",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2914150/28b42dfbb26fe6437e647e6acaf0b5f522eaff25/capsule_616x353.jpg?t=1777264751",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2914150/Yunyun_Syndrome_Rhythm_Psychosis/",
+        "discount": "-10%",
+        "original_price": "$16.99",
+        "final_price": "$15.29",
+        "discount_pct_value": 10,
         "type": "discount"
       },
       {
@@ -1224,18 +1128,6 @@
         "original_price": "$39.99",
         "final_price": "$15.99",
         "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
-        "title": "John Carpenter's Toxic Commando",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2157830/e0beec6285313e3d14921d7a693a102e3801a65c/capsule_231x87.jpg?t=1774963782",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2157830/e0beec6285313e3d14921d7a693a102e3801a65c/capsule_616x353.jpg?t=1774963782",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2157830/John_Carpenters_Toxic_Commando/",
-        "discount": "-20%",
-        "original_price": "$39.99",
-        "final_price": "$31.99",
-        "discount_pct_value": 20,
         "type": "discount"
       },
       {
@@ -1263,15 +1155,15 @@
         "type": "discount"
       },
       {
-        "title": "DYNASTY WARRIORS: ORIGINS",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2384580/1b59148462997497dd63c7915637a4396cff4838/capsule_231x87.jpg?t=1775536473",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2384580/1b59148462997497dd63c7915637a4396cff4838/capsule_616x353.jpg?t=1775536473",
+        "title": "Barotrauma",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1776271911",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602960/capsule_616x353.jpg?t=1776271911",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2384580/DYNASTY_WARRIORS_ORIGINS/",
-        "discount": "-30%",
-        "original_price": "$69.99",
-        "final_price": "$48.99",
-        "discount_pct_value": 30,
+        "link": "https://store.steampowered.com/app/602960/Barotrauma/",
+        "discount": "-50%",
+        "original_price": "$34.99",
+        "final_price": "$17.49",
+        "discount_pct_value": 50,
         "type": "discount"
       },
       {
@@ -1287,30 +1179,6 @@
         "type": "discount"
       },
       {
-        "title": "Barotrauma",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602960/capsule_231x87.jpg?t=1776271911",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/602960/capsule_616x353.jpg?t=1776271911",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/602960/Barotrauma/",
-        "discount": "-50%",
-        "original_price": "$34.99",
-        "final_price": "$17.49",
-        "discount_pct_value": 50,
-        "type": "discount"
-      },
-      {
-        "title": "Dead as Disco Streamer Safe Soundtrack Vol. 1",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4647130/a575ebf0d6c3c62e36d4a5e1f0958463389bb429/capsule_231x87.jpg?t=1777993485",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4647130/a575ebf0d6c3c62e36d4a5e1f0958463389bb429/capsule_616x353.jpg?t=1777993485",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/4647130/Dead_as_Disco_Streamer_Safe_Soundtrack_Vol_1/",
-        "discount": "-20%",
-        "original_price": "$9.99",
-        "final_price": "$7.99",
-        "discount_pct_value": 20,
-        "type": "discount"
-      },
-      {
         "title": "Kaizen: A Factory Story",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275490/7061fa6808fec0c388d752dd682db660e3859778/capsule_231x87.jpg?t=1777913523",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275490/7061fa6808fec0c388d752dd682db660e3859778/capsule_616x353.jpg?t=1777913523",
@@ -1323,15 +1191,15 @@
         "type": "discount"
       },
       {
-        "title": "Europa Universalis V",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_231x87.jpg?t=1777899995",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3450310/b38d9e6151305e42163707ded29f2e6fb0d81f52/capsule_616x353.jpg?t=1777899995",
+        "title": "DREDGE",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562430/d6c28e6402e85395421ac06ac86cdb0e28b48e27/capsule_231x87.jpg?t=1766050211",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1562430/d6c28e6402e85395421ac06ac86cdb0e28b48e27/capsule_616x353.jpg?t=1766050211",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/3450310/Europa_Universalis_V/",
-        "discount": "-10%",
-        "original_price": "$59.99",
-        "final_price": "$53.99",
-        "discount_pct_value": 10,
+        "link": "https://store.steampowered.com/app/1562430/DREDGE/",
+        "discount": "-60%",
+        "original_price": "$26.99",
+        "final_price": "$10.79",
+        "discount_pct_value": 60,
         "type": "discount"
       },
       {
@@ -1347,18 +1215,6 @@
         "type": "discount"
       },
       {
-        "title": "Wax Heads",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2769240/e2a0194d89717783bdc14ba7eef3acbb131c96cb/capsule_231x87.jpg?t=1777995925",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2769240/e2a0194d89717783bdc14ba7eef3acbb131c96cb/capsule_616x353.jpg?t=1777995925",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/2769240/Wax_Heads/",
-        "discount": "-15%",
-        "original_price": "$14.99",
-        "final_price": "$12.74",
-        "discount_pct_value": 15,
-        "type": "discount"
-      },
-      {
         "title": "Human Fall Flat",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/96d6b31873cab41b3f9f94b77b5c8e04154c3939/capsule_231x87_alt_assets_27.jpg?t=1777906900",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/96d6b31873cab41b3f9f94b77b5c8e04154c3939/capsule_616x353.jpg?t=1777906900",
@@ -1371,27 +1227,27 @@
         "type": "discount"
       },
       {
-        "title": "shapez 2 - Factory",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2162800/382b67a9096e2f30d6538f3514f97689ad8b49b4/capsule_231x87_alt_assets_7.jpg?t=1776956035",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2162800/382b67a9096e2f30d6538f3514f97689ad8b49b4/capsule_616x353.jpg?t=1776956035",
+        "title": "John Carpenter's Toxic Commando",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2157830/e0beec6285313e3d14921d7a693a102e3801a65c/capsule_231x87.jpg?t=1774963782",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2157830/e0beec6285313e3d14921d7a693a102e3801a65c/capsule_616x353.jpg?t=1774963782",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/2162800/shapez_2__Factory/",
+        "link": "https://store.steampowered.com/app/2157830/John_Carpenters_Toxic_Commando/",
         "discount": "-20%",
-        "original_price": "$29.99",
-        "final_price": "$23.99",
+        "original_price": "$39.99",
+        "final_price": "$31.99",
         "discount_pct_value": 20,
         "type": "discount"
       },
       {
-        "title": "Magical Princess",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562120/1ffbf0704551c1585a73d56599f6da08a8e227c6/capsule_231x87.jpg?t=1777348229",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562120/1ffbf0704551c1585a73d56599f6da08a8e227c6/capsule_616x353.jpg?t=1777348229",
+        "title": "Wax Heads",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2769240/e2a0194d89717783bdc14ba7eef3acbb131c96cb/capsule_231x87.jpg?t=1777995925",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2769240/e2a0194d89717783bdc14ba7eef3acbb131c96cb/capsule_616x353.jpg?t=1777995925",
         "platform": "steam",
-        "link": "https://store.steampowered.com/app/3562120/Magical_Princess/",
-        "discount": "-20%",
+        "link": "https://store.steampowered.com/app/2769240/Wax_Heads/",
+        "discount": "-15%",
         "original_price": "$14.99",
-        "final_price": "$11.99",
-        "discount_pct_value": 20,
+        "final_price": "$12.74",
+        "discount_pct_value": 15,
         "type": "discount"
       },
       {
@@ -1404,18 +1260,6 @@
         "original_price": "$14.99",
         "final_price": "$9.74",
         "discount_pct_value": 35,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Battlefront (Classic, 2004)",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1058020/capsule_231x87.jpg?t=1741728874",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1058020/capsule_616x353.jpg?t=1741728874",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/1058020/STAR_WARS_Battlefront_Classic_2004/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
         "type": "discount"
       },
       {
@@ -1443,6 +1287,30 @@
         "type": "discount"
       },
       {
+        "title": "Magical Princess",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562120/1ffbf0704551c1585a73d56599f6da08a8e227c6/capsule_231x87.jpg?t=1777348229",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3562120/1ffbf0704551c1585a73d56599f6da08a8e227c6/capsule_616x353.jpg?t=1777348229",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/3562120/Magical_Princess/",
+        "discount": "-20%",
+        "original_price": "$14.99",
+        "final_price": "$11.99",
+        "discount_pct_value": 20,
+        "type": "discount"
+      },
+      {
+        "title": "shapez 2 - Factory",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2162800/382b67a9096e2f30d6538f3514f97689ad8b49b4/capsule_231x87_alt_assets_7.jpg?t=1776956035",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2162800/382b67a9096e2f30d6538f3514f97689ad8b49b4/capsule_616x353.jpg?t=1776956035",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2162800/shapez_2__Factory/",
+        "discount": "-20%",
+        "original_price": "$29.99",
+        "final_price": "$23.99",
+        "discount_pct_value": 20,
+        "type": "discount"
+      },
+      {
         "title": "Mortal Kombat 11 Ultimate",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/518699/capsule_231x87.jpg?t=1775508392",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/518699/capsule_616x353.jpg?t=1775508392",
@@ -1452,30 +1320,6 @@
         "original_price": "$59.99",
         "final_price": "$8.99",
         "discount_pct_value": 85,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS Jedi: Fallen Order Deluxe Edition",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/401587/capsule_231x87.jpg?t=1574100600",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/401587/capsule_616x353.jpg?t=1574100600",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/sub/401587/",
-        "discount": "-80%",
-        "original_price": "$49.99",
-        "final_price": "$9.99",
-        "discount_pct_value": 80,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Jedi Knight - Jedi Academy™",
-        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6020/capsule_231x87.jpg?t=1741814908",
-        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/6020/capsule_616x353.jpg?t=1741814908",
-        "platform": "steam",
-        "link": "https://store.steampowered.com/app/6020/STAR_WARS_Jedi_Knight__Jedi_Academy/",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
         "type": "discount"
       },
       {
@@ -1491,6 +1335,42 @@
         "type": "discount"
       },
       {
+        "title": "AI LIMIT",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2407270/capsule_231x87.jpg?t=1775125430",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2407270/capsule_616x353.jpg?t=1775125430",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2407270/AI_LIMIT/",
+        "discount": "-30%",
+        "original_price": "$34.99",
+        "final_price": "$24.49",
+        "discount_pct_value": 30,
+        "type": "discount"
+      },
+      {
+        "title": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1004640/12bdfff11d35dbd64055124bcdbf690f49d6ce46/capsule_231x87.jpg?t=1766385464",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1004640/12bdfff11d35dbd64055124bcdbf690f49d6ce46/capsule_616x353.jpg?t=1766385464",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1004640/FINAL_FANTASY_TACTICS__The_Ivalice_Chronicles/",
+        "discount": "-30%",
+        "original_price": "$49.99",
+        "final_price": "$34.99",
+        "discount_pct_value": 30,
+        "type": "discount"
+      },
+      {
+        "title": "STAR WARS Jedi: Fallen Order Deluxe Edition",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/401587/capsule_231x87.jpg?t=1574100600",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/401587/capsule_616x353.jpg?t=1574100600",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/sub/401587/",
+        "discount": "-80%",
+        "original_price": "$49.99",
+        "final_price": "$9.99",
+        "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
         "title": "Dead Space",
         "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1693980/capsule_231x87.jpg?t=1777396576",
         "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1693980/capsule_616x353.jpg?t=1777396576",
@@ -1501,11 +1381,131 @@
         "final_price": "$14.99",
         "discount_pct_value": 75,
         "type": "discount"
+      },
+      {
+        "title": "STAR WARS™: Squadrons",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222730/capsule_231x87.jpg?t=1777484522",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222730/capsule_616x353.jpg?t=1777484522",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1222730/STAR_WARS_Squadrons/",
+        "discount": "-90%",
+        "original_price": "$39.99",
+        "final_price": "$3.99",
+        "discount_pct_value": 90,
+        "type": "discount"
+      },
+      {
+        "title": "Over The Top: WWI",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778610/84b051a1fd80aa7b72a4a3e369b33891efbeb3b4/capsule_231x87_alt_assets_1.jpg?t=1777028981",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2778610/84b051a1fd80aa7b72a4a3e369b33891efbeb3b4/capsule_616x353.jpg?t=1777028981",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2778610/Over_The_Top_WWI/",
+        "discount": "-22%",
+        "original_price": "$19.14",
+        "final_price": "$14.92",
+        "discount_pct_value": 22,
+        "type": "discount"
+      },
+      {
+        "title": "Gunfire Reborn",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1217060/7ec98316698083a83078163141f54e75db91b41c/capsule_231x87.jpg?t=1777018249",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1217060/7ec98316698083a83078163141f54e75db91b41c/capsule_616x353.jpg?t=1777018249",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1217060/Gunfire_Reborn/",
+        "discount": "-30%",
+        "original_price": "$19.99",
+        "final_price": "$13.99",
+        "discount_pct_value": 30,
+        "type": "discount"
+      },
+      {
+        "title": "Titanium Court",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2364580/455b040552d142c08737ef0a4d3c7bca8cd0ce9b/capsule_231x87.jpg?t=1777568586",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2364580/455b040552d142c08737ef0a4d3c7bca8cd0ce9b/capsule_616x353.jpg?t=1777568586",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/2364580/Titanium_Court/",
+        "discount": "-20%",
+        "original_price": "$14.99",
+        "final_price": "$11.99",
+        "discount_pct_value": 20,
+        "type": "discount"
+      },
+      {
+        "title": "Dune: Imperium",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1689500/2de4c4cb3caf92ccf957a04c36da7cf4037145c0/capsule_231x87.jpg?t=1767902382",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1689500/2de4c4cb3caf92ccf957a04c36da7cf4037145c0/capsule_616x353.jpg?t=1767902382",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1689500/Dune_Imperium/",
+        "discount": "-35%",
+        "original_price": "$22.99",
+        "final_price": "$14.94",
+        "discount_pct_value": 35,
+        "type": "discount"
+      },
+      {
+        "title": "OCTOPATH TRAVELER™",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/921570/capsule_231x87.jpg?t=1775027150",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/921570/capsule_616x353.jpg?t=1775027150",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/921570/OCTOPATH_TRAVELER/",
+        "discount": "-70%",
+        "original_price": "$59.99",
+        "final_price": "$17.99",
+        "discount_pct_value": 70,
+        "type": "discount"
+      },
+      {
+        "title": "Shin Megami Tensei V: Vengeance",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875830/capsule_231x87.jpg?t=1763530264",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1875830/capsule_616x353.jpg?t=1763530264",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1875830/Shin_Megami_Tensei_V_Vengeance/",
+        "discount": "-65%",
+        "original_price": "$59.99",
+        "final_price": "$20.99",
+        "discount_pct_value": 65,
+        "type": "discount"
+      },
+      {
+        "title": "Mortal Kombat XL",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/128345/capsule_231x87.jpg?t=1698957925",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/subs/128345/capsule_616x353.jpg?t=1698957925",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/sub/128345/",
+        "discount": "-80%",
+        "original_price": "$29.99",
+        "final_price": "$5.99",
+        "discount_pct_value": 80,
+        "type": "discount"
+      },
+      {
+        "title": "Mass Effect™ Legendary Edition",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/capsule_231x87.jpg?t=1777395134",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1328670/capsule_616x353.jpg?t=1777395134",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/",
+        "discount": "-75%",
+        "original_price": "$59.99",
+        "final_price": "$14.99",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Titanfall® 2",
+        "image_small": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237970/capsule_231x87.jpg?t=1777412058",
+        "image_big": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237970/capsule_616x353.jpg?t=1777412058",
+        "platform": "steam",
+        "link": "https://store.steampowered.com/app/1237970/Titanfall_2/",
+        "discount": "-85%",
+        "original_price": "$29.99",
+        "final_price": "$4.49",
+        "discount_pct_value": 85,
+        "type": "discount"
       }
     ]
   },
   "steam_free": {
-    "last_updated": "2026-05-05T15:53:07.461953",
+    "last_updated": "2026-05-05T17:23:48.621749",
     "data": [
       {
         "title": "World of Warships — Marblehead Lima",
@@ -1522,7 +1522,7 @@
     ]
   },
   "gog_discount": {
-    "last_updated": "2026-05-05T15:53:17.389024",
+    "last_updated": "2026-05-05T17:23:58.129003",
     "data": [
       {
         "title": "Heroes of Might and Magic® 3: Complete",
@@ -1585,11 +1585,11 @@
         "type": "discount"
       },
       {
-        "title": "Star Wars™: Jedi Knight™ - Jedi Academy™",
-        "image_small": "https://images.gog-statics.com/52b19c33e912370d1328c29323180a439f7782a4e0519471b2b664d6c9a64038_product_tile_extended_432x243.jpg",
-        "image_big": "https://images.gog-statics.com/52b19c33e912370d1328c29323180a439f7782a4e0519471b2b664d6c9a64038_product_tile_extended_432x243.jpg",
+        "title": "STAR WARS™ Battlefront™ II (Classic, 2005)",
+        "image_small": "https://images.gog-statics.com/458d6b963755ce3b0afa93f9976e2c05360f569826b00f0c91442f8a892f19a9_product_tile_extended_432x243.jpg",
+        "image_big": "https://images.gog-statics.com/458d6b963755ce3b0afa93f9976e2c05360f569826b00f0c91442f8a892f19a9_product_tile_extended_432x243.jpg",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_jedi_knight_jedi_academy",
+        "link": "https://www.gog.com/en/game/star_wars_battlefront_ii",
         "discount": "-75%",
         "original_price": "$9.99",
         "final_price": "$2.49",
@@ -1597,23 +1597,23 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition",
-        "image_small": "https://images.gog-statics.com/5dc39b9a86981b24d8abd9f42667627bd000057ea8bb07a9699a845719ef428c_product_tile_extended_432x243.jpg",
-        "image_big": "https://images.gog-statics.com/5dc39b9a86981b24d8abd9f42667627bd000057ea8bb07a9699a845719ef428c_product_tile_extended_432x243.jpg",
+        "title": "STAR WARS™ Republic Commando",
+        "image_small": "https://images.gog-statics.com/3f82c58b03c0ccd8c47989813cabd22268fe2ff6366729dc3c500babf1acb307_product_tile_extended_432x243.jpg",
+        "image_big": "https://images.gog-statics.com/3f82c58b03c0ccd8c47989813cabd22268fe2ff6366729dc3c500babf1acb307_product_tile_extended_432x243.jpg",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_the_force_unleashed_ultimate_sith_edition",
+        "link": "https://www.gog.com/en/game/star_wars_republic_commando",
         "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
+        "original_price": "$9.99",
+        "final_price": "$2.49",
         "discount_pct_value": 75,
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ Battlefront™ II (Classic, 2005)",
-        "image_small": "https://images.gog-statics.com/458d6b963755ce3b0afa93f9976e2c05360f569826b00f0c91442f8a892f19a9_product_tile_extended_432x243.jpg",
-        "image_big": "https://images.gog-statics.com/458d6b963755ce3b0afa93f9976e2c05360f569826b00f0c91442f8a892f19a9_product_tile_extended_432x243.jpg",
+        "title": "Star Wars™: Jedi Knight™ - Jedi Academy™",
+        "image_small": "https://images.gog-statics.com/52b19c33e912370d1328c29323180a439f7782a4e0519471b2b664d6c9a64038_product_tile_extended_432x243.jpg",
+        "image_big": "https://images.gog-statics.com/52b19c33e912370d1328c29323180a439f7782a4e0519471b2b664d6c9a64038_product_tile_extended_432x243.jpg",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_battlefront_ii",
+        "link": "https://www.gog.com/en/game/star_wars_jedi_knight_jedi_academy",
         "discount": "-75%",
         "original_price": "$9.99",
         "final_price": "$2.49",
@@ -1645,38 +1645,26 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™: The Force Unleashed™ II",
-        "image_small": "https://images.gog-statics.com/943a1894a4a700955cdc7756ff0f04b0e9bbeabcb4f3ffd52bef38f588edb1dc_product_tile_extended_432x243.jpg",
-        "image_big": "https://images.gog-statics.com/943a1894a4a700955cdc7756ff0f04b0e9bbeabcb4f3ffd52bef38f588edb1dc_product_tile_extended_432x243.jpg",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_the_force_unleashed_ii",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™ Republic Commando",
-        "image_small": "https://images.gog-statics.com/3f82c58b03c0ccd8c47989813cabd22268fe2ff6366729dc3c500babf1acb307_product_tile_extended_432x243.jpg",
-        "image_big": "https://images.gog-statics.com/3f82c58b03c0ccd8c47989813cabd22268fe2ff6366729dc3c500babf1acb307_product_tile_extended_432x243.jpg",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_republic_commando",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
         "title": "STAR WARS™: X-Wing Alliance™",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_small": "https://images.gog-statics.com/0485e8ca4aa0c4f9fd7a8e561c2f804af0702bbe5f36c48ef899242246d40255_product_tile_extended_432x243.jpg",
+        "image_big": "https://images.gog-statics.com/0485e8ca4aa0c4f9fd7a8e561c2f804af0702bbe5f36c48ef899242246d40255_product_tile_extended_432x243.jpg",
         "platform": "gog",
         "link": "https://www.gog.com/en/game/star_wars_xwing_alliance",
         "discount": "-75%",
         "original_price": "$9.99",
         "final_price": "$2.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition",
+        "image_small": "https://images.gog-statics.com/5dc39b9a86981b24d8abd9f42667627bd000057ea8bb07a9699a845719ef428c_product_tile_extended_432x243.jpg",
+        "image_big": "https://images.gog-statics.com/5dc39b9a86981b24d8abd9f42667627bd000057ea8bb07a9699a845719ef428c_product_tile_extended_432x243.jpg",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/star_wars_the_force_unleashed_ultimate_sith_edition",
+        "discount": "-75%",
+        "original_price": "$19.99",
+        "final_price": "$4.99",
         "discount_pct_value": 75,
         "type": "discount"
       },
@@ -1693,14 +1681,14 @@
         "type": "discount"
       },
       {
-        "title": "Heroes of Might and Magic® 4: Complete",
+        "title": "STAR WARS™: The Force Unleashed™ II",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_4_complete",
+        "link": "https://www.gog.com/en/game/star_wars_the_force_unleashed_ii",
         "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
+        "original_price": "$19.99",
+        "final_price": "$4.99",
         "discount_pct_value": 75,
         "type": "discount"
       },
@@ -1713,6 +1701,30 @@
         "discount": "-75%",
         "original_price": "$5.99",
         "final_price": "$1.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "STAR WARS™ Empire at War: Gold Pack",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/star_wars_empire_at_war_gold_pack",
+        "discount": "-75%",
+        "original_price": "$19.99",
+        "final_price": "$4.99",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "STAR WARS™: Rogue Squadron 3D",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/star_wars_rogue_squadron_3d",
+        "discount": "-75%",
+        "original_price": "$9.99",
+        "final_price": "$2.49",
         "discount_pct_value": 75,
         "type": "discount"
       },
@@ -1753,30 +1765,6 @@
         "type": "discount"
       },
       {
-        "title": "STAR WARS™ Empire at War: Gold Pack",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_empire_at_war_gold_pack",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™: Rogue Squadron 3D",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_rogue_squadron_3d",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
         "title": "Dragon Age™: Origins - Ultimate Edition",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
@@ -1785,6 +1773,18 @@
         "discount": "-75%",
         "original_price": "$19.99",
         "final_price": "$4.99",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Heroes of Might and Magic® 4: Complete",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_4_complete",
+        "discount": "-75%",
+        "original_price": "$9.99",
+        "final_price": "$2.49",
         "discount_pct_value": 75,
         "type": "discount"
       },
@@ -1813,18 +1813,6 @@
         "type": "discount"
       },
       {
-        "title": "Heroes of Might and Magic® 5: Bundle",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_5_bundle",
-        "discount": "-75%",
-        "original_price": "$19.99",
-        "final_price": "$4.99",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
         "title": "STAR WARS™ Starfighter™",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
@@ -1849,39 +1837,15 @@
         "type": "discount"
       },
       {
-        "title": "Star Wars™: Episode I: Jedi Power Battles™",
+        "title": "Heroes of Might and Magic® 5: Bundle",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_episode_i_jedi_power_battles",
-        "discount": "-60%",
-        "original_price": "$19.99",
-        "final_price": "$7.99",
-        "discount_pct_value": 60,
-        "type": "discount"
-      },
-      {
-        "title": "Heroes of Might and Magic® 2: Gold",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_2_gold_edition",
+        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_5_bundle",
         "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "STAR WARS™: Bounty Hunter™",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/star_wars_bounty_hunter",
-        "discount": "-65%",
         "original_price": "$19.99",
-        "final_price": "$6.99",
-        "discount_pct_value": 65,
+        "final_price": "$4.99",
+        "discount_pct_value": 75,
         "type": "discount"
       },
       {
@@ -1897,6 +1861,114 @@
         "type": "discount"
       },
       {
+        "title": "Sid Meier's Alpha Centauri™ Planetary Pack",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/sid_meiers_alpha_centauri",
+        "discount": "-83%",
+        "original_price": "$5.99",
+        "final_price": "$0.99",
+        "discount_pct_value": 83,
+        "type": "discount"
+      },
+      {
+        "title": "Seers Isle",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/seers_isle",
+        "discount": "-75%",
+        "original_price": "$13.99",
+        "final_price": "$3.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Star Wars™: Episode I: Jedi Power Battles™",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/star_wars_episode_i_jedi_power_battles",
+        "discount": "-60%",
+        "original_price": "$19.99",
+        "final_price": "$7.99",
+        "discount_pct_value": 60,
+        "type": "discount"
+      },
+      {
+        "title": "STAR WARS™: Bounty Hunter™",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/star_wars_bounty_hunter",
+        "discount": "-65%",
+        "original_price": "$19.99",
+        "final_price": "$6.99",
+        "discount_pct_value": 65,
+        "type": "discount"
+      },
+      {
+        "title": "End of Lines",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/end_of_lines",
+        "discount": "-75%",
+        "original_price": "$13.99",
+        "final_price": "$3.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Along the Edge",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/along_the_edge",
+        "discount": "-75%",
+        "original_price": "$13.99",
+        "final_price": "$3.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Hitman: Blood Money",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/hitman_blood_money",
+        "discount": "-90%",
+        "original_price": "$9.99",
+        "final_price": "$0.99",
+        "discount_pct_value": 90,
+        "type": "discount"
+      },
+      {
+        "title": "Wizardry 8",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/wizardry_8",
+        "discount": "-85%",
+        "original_price": "$9.99",
+        "final_price": "$1.49",
+        "discount_pct_value": 85,
+        "type": "discount"
+      },
+      {
+        "title": "Heroes of Might and Magic® 2: Gold",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic_2_gold_edition",
+        "discount": "-75%",
+        "original_price": "$9.99",
+        "final_price": "$2.49",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
         "title": "DLC",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
@@ -1906,30 +1978,6 @@
         "original_price": "$9.99",
         "final_price": "$7.49",
         "discount_pct_value": 25,
-        "type": "discount"
-      },
-      {
-        "title": "Nox™",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/nox",
-        "discount": "-77%",
-        "original_price": "$5.99",
-        "final_price": "$1.39",
-        "discount_pct_value": 77,
-        "type": "discount"
-      },
-      {
-        "title": "DOOM (2016)",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/doom_2016",
-        "discount": "-80%",
-        "original_price": "$19.99",
-        "final_price": "$3.99",
-        "discount_pct_value": 80,
         "type": "discount"
       },
       {
@@ -1945,6 +1993,18 @@
         "type": "discount"
       },
       {
+        "title": "Hitman 3: Contracts",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/hitman_contracts",
+        "discount": "-90%",
+        "original_price": "$8.99",
+        "final_price": "$0.89",
+        "discount_pct_value": 90,
+        "type": "discount"
+      },
+      {
         "title": "Breath of Fire IV",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
@@ -1957,15 +2017,15 @@
         "type": "discount"
       },
       {
-        "title": "Arx Fatalis",
+        "title": "Hitman 2: Silent Assassin",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/arx_fatalis",
-        "discount": "-67%",
-        "original_price": "$4.99",
-        "final_price": "$1.65",
-        "discount_pct_value": 67,
+        "link": "https://www.gog.com/en/game/hitman_2_silent_assassin",
+        "discount": "-90%",
+        "original_price": "$8.99",
+        "final_price": "$0.89",
+        "discount_pct_value": 90,
         "type": "discount"
       },
       {
@@ -1981,75 +2041,15 @@
         "type": "discount"
       },
       {
-        "title": "Beyond Good & Evil™",
+        "title": "Fallout 4: Game of the Year Edition",
         "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
         "platform": "gog",
-        "link": "https://www.gog.com/en/game/beyond_good_and_evil",
-        "discount": "-70%",
-        "original_price": "$9.99",
-        "final_price": "$2.99",
-        "discount_pct_value": 70,
-        "type": "discount"
-      },
-      {
-        "title": "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/stalker_call_of_prypiat_enhanced_edition",
-        "discount": "-33%",
-        "original_price": "$19.99",
-        "final_price": "$13.39",
-        "discount_pct_value": 33,
-        "type": "discount"
-      },
-      {
-        "title": "Heroes of Might and Magic®",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic",
-        "discount": "-75%",
-        "original_price": "$9.99",
-        "final_price": "$2.49",
-        "discount_pct_value": 75,
-        "type": "discount"
-      },
-      {
-        "title": "The Elder Scrolls III: Morrowind GOTY Edition",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/the_elder_scrolls_iii_morrowind_goty_edition",
-        "discount": "-50%",
-        "original_price": "$14.99",
-        "final_price": "$7.49",
-        "discount_pct_value": 50,
-        "type": "discount"
-      },
-      {
-        "title": "Sid Meier's Alpha Centauri™ Planetary Pack",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/sid_meiers_alpha_centauri",
-        "discount": "-83%",
-        "original_price": "$5.99",
-        "final_price": "$0.99",
-        "discount_pct_value": 83,
-        "type": "discount"
-      },
-      {
-        "title": "Tomb Raider GOTY",
-        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
-        "platform": "gog",
-        "link": "https://www.gog.com/en/game/tomb_raider_goty",
-        "discount": "-85%",
-        "original_price": "$19.99",
-        "final_price": "$2.99",
-        "discount_pct_value": 85,
+        "link": "https://www.gog.com/en/game/fallout_4_game_of_the_year_edition",
+        "discount": "-60%",
+        "original_price": "$39.99",
+        "final_price": "$15.99",
+        "discount_pct_value": 60,
         "type": "discount"
       },
       {
@@ -2061,6 +2061,30 @@
         "discount": "-75%",
         "original_price": "$19.99",
         "final_price": "$4.99",
+        "discount_pct_value": 75,
+        "type": "discount"
+      },
+      {
+        "title": "Nox™",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/nox",
+        "discount": "-77%",
+        "original_price": "$5.99",
+        "final_price": "$1.39",
+        "discount_pct_value": 77,
+        "type": "discount"
+      },
+      {
+        "title": "Heroes of Might and Magic®",
+        "image_small": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "image_big": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNiYAAAAAkAAxkR2eQAAAAASUVORK5CYII=",
+        "platform": "gog",
+        "link": "https://www.gog.com/en/game/heroes_of_might_and_magic",
+        "discount": "-75%",
+        "original_price": "$9.99",
+        "final_price": "$2.49",
         "discount_pct_value": 75,
         "type": "discount"
       }
